@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · El Contramaestre</title>
+<meta name="description" content="Política de privacidad de la aplicación El Contramaestre. No recogemos ningún dato personal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#08111C; --panel:#0E1B2A; --panel-up:#132436; --line:#1D3348;
+    --ink:#E8F1F8; --mute:#8AA0B5; --teal:#3BD9C4; --brass:#D8B36A; --ok:#59C88E;
+    --display:'Bricolage Grotesque',system-ui,sans-serif;
+    --body:'Instrument Sans',system-ui,sans-serif;
+    --mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:80px}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--teal)}
+  header{position:sticky;top:0;z-index:50;background:rgba(8,17,28,.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .head-in{max-width:820px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:14px}
+  .badge{width:42px;height:42px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,#1F6E64,var(--panel-up));border:1px solid rgba(59,217,196,.28)}
+  .brand h1{font-family:var(--display);font-size:18px;line-height:1;font-weight:800}
+  .brand p{font-family:var(--mono);font-size:11.5px;color:var(--mute);margin-top:4px}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px 80px}
+  .hero{padding:48px 0 26px}
+  .hero .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);margin-bottom:12px}
+  .hero h2{font-family:var(--display);font-size:clamp(28px,5vw,42px);line-height:1.1;font-weight:800;letter-spacing:-.015em}
+  .updated{font-family:var(--mono);font-size:13px;color:var(--mute);margin-top:14px}
+  .destacado{display:flex;gap:14px;padding:20px;border-radius:15px;margin:26px 0 34px;
+    background:rgba(89,200,142,.09);border:1px solid rgba(89,200,142,.35)}
+  .destacado strong{color:var(--ok)}
+  .langs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}
+  .langs a{padding:7px 14px;border-radius:10px;background:var(--panel);border:1px solid var(--line);
+    color:var(--mute);text-decoration:none;font-size:14px}
+  .langs a:hover{border-color:rgba(59,217,196,.5);color:var(--ink)}
+  section{scroll-margin-top:80px;padding:28px 0;border-top:1px solid var(--line)}
+  h3{font-family:var(--display);font-size:22px;font-weight:700;margin-bottom:12px}
+  h4{font-size:16px;font-weight:700;color:var(--brass);margin:20px 0 8px}
+  p{margin:0 0 14px;color:var(--mute);max-width:68ch}
+  ul{list-style:none;margin:0 0 16px;max-width:68ch}
+  li{position:relative;padding-left:20px;margin-bottom:9px;color:var(--mute)}
+  li::before{content:"";position:absolute;left:2px;top:11px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+  strong{color:var(--ink);font-weight:600}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);color:var(--mute);vertical-align:top}
+  th{color:var(--ink);font-weight:600}
+  footer{border-top:1px solid var(--line);padding:30px 22px 60px;text-align:center;color:var(--mute);font-size:14px}
+  .lang-block{display:none}
+  .lang-block.on{display:block}
+</style>
+</head>
+<body>
+
+<svg style="display:none">
+  <symbol id="chifle" viewBox="0 0 52 32">
+    <circle cx="7" cy="17" r="4" fill="none" stroke="currentColor" stroke-width="2.4"/>
+    <path d="M11 16.6 C15.5 11.2, 27 8.4, 34 9.6 C37.2 10.2, 38.8 11.7, 39.6 13.2
+             C38.8 14.8, 36.6 16.1, 33 16.5 C26 17.3, 15.8 20.2, 11 17.5 Z" fill="currentColor"/>
+    <circle cx="43" cy="12.6" r="7.6" fill="currentColor"/>
+    <circle cx="40.4" cy="9.6" r="1.9" fill="#08111C"/>
+  </symbol>
+  <symbol id="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+    <path d="m9 12 2 2 4-4"/>
+  </symbol>
+</svg>
+
+<header>
+  <div class="head-in">
+    <span class="badge" style="color:var(--teal)"><svg width="23" height="15"><use href="#chifle"/></svg></span>
+    <div class="brand">
+      <h1>EL CONTRAMAESTRE</h1>
+      <p>política de privacidad</p>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Política de privacidad</div>
+    <h2>No recogemos ningún dato tuyo</h2>
+    <p class="updated">Última actualización: 6 de agosto de 2026</p>
+  </div>
+
+  <div class="langs">
+    <a href="#" onclick="setLang('es');return false">Español</a>
+    <a href="#" onclick="setLang('en');return false">English</a>
+    <a href="#" onclick="setLang('fr');return false">Français</a>
+    <a href="#" onclick="setLang('pt');return false">Português</a>
+  </div>
+
+  <!-- ================= ESPAÑOL ================= -->
+  <div class="lang-block on" id="es">
+
+    <div class="destacado">
+      <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
+      <div>
+        <strong>En resumen:</strong> El Contramaestre no recoge, almacena ni transmite ningún dato personal.
+        Todo lo que escribes en la aplicación se queda guardado únicamente en tu propio dispositivo.
+        No hay servidores, ni cuentas de usuario, ni publicidad, ni seguimiento de ningún tipo.
+      </div>
+    </div>
+
+    <section>
+      <h3>1. Quién es el responsable</h3>
+      <p>Esta aplicación, <strong>El Contramaestre</strong>, está desarrollada y publicada por
+         <strong>José Cuervo</strong>, desarrollador independiente.</p>
+      <p>Para cualquier cuestión relacionada con esta política puedes escribir a:
+         <a href="mailto:jose.cuervo.acebal@gmail.com"><strong>jose.cuervo.acebal@gmail.com</strong></a></p>
+    </section>
+
+    <section>
+      <h3>2. Qué datos se recogen</h3>
+      <p><strong>Ninguno.</strong> La aplicación no solicita registro, no crea cuentas de usuario y no
+         envía información a ningún servidor propio ni de terceros.</p>
+      <p>La información que introduces —el nombre de tu embarcación, el modelo del motor, las fechas de
+         mantenimiento, las horas del motor, tu inventario de material de seguridad y tus anotaciones—
+         se guarda exclusivamente en el almacenamiento local de tu dispositivo. Ni el desarrollador ni
+         nadie más tiene acceso a ella.</p>
+      <p>Si desinstalas la aplicación sin haber hecho una copia de seguridad, esa información se pierde
+         de forma definitiva.</p>
+    </section>
+
+    <section>
+      <h3>3. Permisos que solicita la aplicación</h3>
+      <table>
+        <tr><th>Permiso</th><th>Para qué se usa</th></tr>
+        <tr>
+          <td><strong>Ubicación</strong></td>
+          <td>Únicamente para mostrarte tu latitud y longitud en la pantalla de socorro, en formato
+              náutico, de modo que puedas darla por radio en una emergencia. La posición se calcula en
+              el dispositivo, se muestra en pantalla y <strong>no se guarda ni se envía a ninguna
+              parte</strong>. Puedes denegar este permiso: el resto de la aplicación funciona igual.</td>
+        </tr>
+        <tr>
+          <td><strong>Notificaciones</strong></td>
+          <td>Para avisarte cuando un mantenimiento va a vencer o un material de seguridad va a caducar.
+              Los avisos se generan íntegramente en tu dispositivo; no hay notificaciones enviadas desde
+              ningún servidor.</td>
+        </tr>
+        <tr>
+          <td><strong>Alarmas exactas</strong></td>
+          <td>Para que esos avisos lleguen el día previsto y no con retraso.</td>
+        </tr>
+        <tr>
+          <td><strong>Almacenamiento</strong></td>
+          <td>Solo cuando pulsas «Exportar copia», para escribir en tu dispositivo el archivo de copia
+              de seguridad que tú decides dónde guardar o compartir.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>4. Compras dentro de la aplicación</h3>
+      <p>La aplicación ofrece una compra única y opcional para desbloquear sus funciones completas.
+         Esa transacción la gestiona íntegramente <strong>Google Play</strong>.</p>
+      <p>El desarrollador <strong>no recibe ni almacena</strong> ningún dato de pago: ni el número de tu
+         tarjeta, ni tu nombre, ni tu dirección. La aplicación únicamente consulta a Google Play si esa
+         compra existe, para saber si debe desbloquear las funciones.</p>
+      <p>El tratamiento que Google hace de esos datos se rige por su propia política de privacidad:
+         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+    </section>
+
+    <section>
+      <h3>5. Publicidad y análisis</h3>
+      <p>La aplicación <strong>no contiene publicidad</strong> y <strong>no utiliza herramientas de
+         análisis ni de seguimiento</strong> de ningún tipo. No hay identificadores publicitarios,
+         ni estadísticas de uso, ni perfiles de comportamiento.</p>
+    </section>
+
+    <section>
+      <h3>6. Menores</h3>
+      <p>La aplicación está dirigida a personas mayores de edad responsables de una embarcación de
+         recreo. Al no recoger dato alguno, tampoco recoge datos de menores.</p>
+    </section>
+
+    <section>
+      <h3>7. Tus derechos</h3>
+      <p>La normativa de protección de datos (RGPD) reconoce derechos de acceso, rectificación,
+         supresión y portabilidad. En esta aplicación puedes ejercerlos tú directamente y en cualquier
+         momento, sin intermediarios:</p>
+      <ul>
+        <li><strong>Acceder y rectificar:</strong> toda la información está visible y es editable dentro de la propia aplicación.</li>
+        <li><strong>Suprimir:</strong> desinstalando la aplicación, o usando «Restaurar plantillas de fábrica» en Ajustes.</li>
+        <li><strong>Portar:</strong> con «Exportar copia» obtienes todos tus datos en un archivo estándar.</li>
+      </ul>
+      <p>Como el desarrollador no dispone de ningún dato tuyo, no puede acceder a ellos, modificarlos ni
+         eliminarlos en tu nombre.</p>
+    </section>
+
+    <section>
+      <h3>8. Aviso importante sobre el uso</h3>
+      <p>El Contramaestre es una herramienta de apoyo y recordatorio. Los intervalos de mantenimiento y
+         las listas de material de seguridad que incorpora son <strong>orientativos</strong>.</p>
+      <p>Prevalecen siempre el manual del fabricante de tu motor y de cada equipo, así como la normativa
+         vigente que resulte aplicable a tu embarcación y zona de navegación. La información de la
+         pantalla de socorro no sustituye a la formación náutica ni a los procedimientos oficiales de
+         emergencia.</p>
+    </section>
+
+    <section>
+      <h3>9. Cambios en esta política</h3>
+      <p>Si en el futuro esta política cambia, se publicará aquí una versión actualizada con su fecha.
+         Si algún cambio implicase recoger datos personales —cosa que hoy no ocurre— se solicitaría tu
+         consentimiento expreso antes de hacerlo.</p>
+    </section>
+
+  </div>
+
+  <!-- ================= ENGLISH ================= -->
+  <div class="lang-block" id="en">
+    <div class="destacado">
+      <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
+      <div>
+        <strong>In short:</strong> The Boatswain does not collect, store or transmit any personal data.
+        Everything you enter stays on your own device. There are no servers, no user accounts, no
+        advertising and no tracking of any kind.
+      </div>
+    </div>
+
+    <section>
+      <h3>1. Who is responsible</h3>
+      <p>This application, <strong>The Boatswain</strong> (El Contramaestre), is developed and published
+         by <strong>José Cuervo</strong>, an independent developer.</p>
+      <p>For any question about this policy you can write to: <a href="mailto:jose.cuervo.acebal@gmail.com"><strong>jose.cuervo.acebal@gmail.com</strong></a></p>
+    </section>
+
+    <section>
+      <h3>2. What data is collected</h3>
+      <p><strong>None.</strong> The app requires no sign-up, creates no user accounts and sends no
+         information to any server, whether the developer's or a third party's.</p>
+      <p>What you enter — your boat's name, engine model, maintenance dates, engine hours, safety
+         equipment inventory and your notes — is stored solely in your device's local storage. Neither
+         the developer nor anyone else can access it.</p>
+      <p>If you uninstall the app without making a backup, that information is permanently lost.</p>
+    </section>
+
+    <section>
+      <h3>3. Permissions the app requests</h3>
+      <table>
+        <tr><th>Permission</th><th>What it is used for</th></tr>
+        <tr><td><strong>Location</strong></td>
+            <td>Only to show your latitude and longitude on the distress screen, in nautical format, so
+                you can read it out over the radio in an emergency. The position is calculated on the
+                device, shown on screen and <strong>never stored or transmitted</strong>. You may deny
+                this permission: the rest of the app works the same.</td></tr>
+        <tr><td><strong>Notifications</strong></td>
+            <td>To warn you when maintenance is due or safety equipment is about to expire. Warnings are
+                generated entirely on your device; nothing is pushed from any server.</td></tr>
+        <tr><td><strong>Exact alarms</strong></td>
+            <td>So those warnings arrive on the intended day rather than late.</td></tr>
+        <tr><td><strong>Storage</strong></td>
+            <td>Only when you tap "Export backup", to write the backup file that you then choose where
+                to save or share.</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>4. In-app purchases</h3>
+      <p>The app offers a single optional purchase to unlock its full features. That transaction is
+         handled entirely by <strong>Google Play</strong>.</p>
+      <p>The developer <strong>neither receives nor stores</strong> any payment data: not your card
+         number, not your name, not your address. The app only asks Google Play whether that purchase
+         exists, in order to know whether to unlock the features.</p>
+      <p>Google's handling of that data is governed by its own privacy policy:
+         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+    </section>
+
+    <section>
+      <h3>5. Advertising and analytics</h3>
+      <p>The app contains <strong>no advertising</strong> and uses <strong>no analytics or tracking
+         tools</strong> of any kind. There are no advertising identifiers, no usage statistics and no
+         behavioural profiles.</p>
+    </section>
+
+    <section>
+      <h3>6. Children</h3>
+      <p>The app is aimed at adults responsible for a pleasure craft. As it collects no data at all,
+         it collects no data from children either.</p>
+    </section>
+
+    <section>
+      <h3>7. Your rights</h3>
+      <p>Data protection law (GDPR) grants rights of access, rectification, erasure and portability.
+         In this app you can exercise them yourself, at any time, with no intermediary:</p>
+      <ul>
+        <li><strong>Access and rectify:</strong> all information is visible and editable inside the app.</li>
+        <li><strong>Erase:</strong> by uninstalling the app, or using "Restore factory templates" in Settings.</li>
+        <li><strong>Port:</strong> "Export backup" gives you all your data in a standard file.</li>
+      </ul>
+      <p>Since the developer holds no data about you, he cannot access, change or delete it on your behalf.</p>
+    </section>
+
+    <section>
+      <h3>8. Important notice about use</h3>
+      <p>The Boatswain is a support and reminder tool. The maintenance intervals and safety equipment
+         lists it includes are <strong>indicative</strong>.</p>
+      <p>Your engine manufacturer's manual, each piece of equipment's manual, and the regulations
+         applicable to your boat and navigation zone always take precedence. The information on the
+         distress screen is no substitute for proper training or official emergency procedures.</p>
+    </section>
+
+    <section>
+      <h3>9. Changes to this policy</h3>
+      <p>If this policy changes in the future, an updated version will be published here with its date.
+         If any change involved collecting personal data — which is not the case today — your explicit
+         consent would be requested first.</p>
+    </section>
+  </div>
+
+  <!-- ================= FRANÇAIS ================= -->
+  <div class="lang-block" id="fr">
+    <div class="destacado">
+      <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
+      <div>
+        <strong>En résumé :</strong> Le Maître d'Équipage ne collecte, ne stocke ni ne transmet aucune
+        donnée personnelle. Tout ce que tu saisis reste sur ton appareil. Aucun serveur, aucun compte
+        utilisateur, aucune publicité, aucun suivi.
+      </div>
+    </div>
+
+    <section>
+      <h3>1. Responsable</h3>
+      <p>Cette application, <strong>Le Maître d'Équipage</strong> (El Contramaestre), est développée et
+         publiée par <strong>José Cuervo</strong>, développeur indépendant.</p>
+      <p>Pour toute question : <a href="mailto:jose.cuervo.acebal@gmail.com"><strong>jose.cuervo.acebal@gmail.com</strong></a></p>
+    </section>
+
+    <section>
+      <h3>2. Données collectées</h3>
+      <p><strong>Aucune.</strong> L'application ne demande aucune inscription, ne crée aucun compte et
+         n'envoie aucune information à un serveur, qu'il soit celui du développeur ou d'un tiers.</p>
+      <p>Ce que tu saisis — nom du bateau, modèle de moteur, dates d'entretien, heures moteur,
+         inventaire de sécurité et tes notes — est stocké uniquement dans la mémoire locale de ton
+         appareil. Ni le développeur ni personne d'autre n'y a accès.</p>
+      <p>Si tu désinstalles l'application sans sauvegarde, ces informations sont définitivement perdues.</p>
+    </section>
+
+    <section>
+      <h3>3. Autorisations demandées</h3>
+      <table>
+        <tr><th>Autorisation</th><th>Usage</th></tr>
+        <tr><td><strong>Localisation</strong></td>
+            <td>Uniquement pour afficher ta latitude et ta longitude sur l'écran de détresse, au format
+                nautique, afin de pouvoir les annoncer à la radio en cas d'urgence. La position est
+                calculée sur l'appareil et <strong>n'est ni enregistrée ni transmise</strong>. Tu peux
+                refuser cette autorisation : le reste fonctionne à l'identique.</td></tr>
+        <tr><td><strong>Notifications</strong></td>
+            <td>Pour te prévenir avant une échéance d'entretien ou une péremption de matériel. Les
+                alertes sont générées entièrement sur ton appareil.</td></tr>
+        <tr><td><strong>Alarmes exactes</strong></td>
+            <td>Pour que ces alertes arrivent le jour prévu et non en retard.</td></tr>
+        <tr><td><strong>Stockage</strong></td>
+            <td>Uniquement lorsque tu appuies sur « Exporter une copie », pour écrire le fichier de
+                sauvegarde que tu choisis ensuite d'enregistrer ou de partager.</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>4. Achats intégrés</h3>
+      <p>L'application propose un achat unique et facultatif pour débloquer toutes ses fonctions. Cette
+         transaction est gérée intégralement par <strong>Google Play</strong>.</p>
+      <p>Le développeur <strong>ne reçoit ni ne conserve</strong> aucune donnée de paiement. L'application
+         demande seulement à Google Play si cet achat existe, pour savoir s'il faut débloquer les
+         fonctions.</p>
+      <p>Le traitement par Google est régi par sa propre politique :
+         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+    </section>
+
+    <section>
+      <h3>5. Publicité et analyse</h3>
+      <p>L'application ne contient <strong>aucune publicité</strong> et n'utilise <strong>aucun outil
+         d'analyse ou de suivi</strong>.</p>
+    </section>
+
+    <section>
+      <h3>6. Mineurs</h3>
+      <p>L'application s'adresse à des personnes majeures responsables d'un bateau de plaisance. Ne
+         collectant aucune donnée, elle n'en collecte pas non plus auprès de mineurs.</p>
+    </section>
+
+    <section>
+      <h3>7. Tes droits</h3>
+      <p>Le RGPD reconnaît des droits d'accès, de rectification, d'effacement et de portabilité. Tu peux
+         les exercer toi-même, à tout moment :</p>
+      <ul>
+        <li><strong>Accès et rectification :</strong> toutes les informations sont visibles et modifiables dans l'application.</li>
+        <li><strong>Effacement :</strong> en désinstallant l'application ou via « Restaurer les modèles d'origine ».</li>
+        <li><strong>Portabilité :</strong> « Exporter une copie » te fournit toutes tes données dans un fichier standard.</li>
+      </ul>
+      <p>Le développeur ne détenant aucune donnée te concernant, il ne peut ni y accéder ni les modifier
+         pour toi.</p>
+    </section>
+
+    <section>
+      <h3>8. Avertissement important</h3>
+      <p>Le Maître d'Équipage est un outil d'aide et de rappel. Les intervalles d'entretien et les listes
+         de matériel de sécurité sont <strong>indicatifs</strong>.</p>
+      <p>Le manuel du constructeur de ton moteur, celui de chaque équipement et la réglementation
+         applicable à ton bateau priment toujours. L'écran de détresse ne remplace ni la formation
+         nautique ni les procédures officielles d'urgence.</p>
+    </section>
+
+    <section>
+      <h3>9. Modifications</h3>
+      <p>Toute version actualisée sera publiée ici avec sa date. Si un changement impliquait la collecte
+         de données personnelles — ce qui n'est pas le cas aujourd'hui — ton consentement explicite
+         serait demandé au préalable.</p>
+    </section>
+  </div>
+
+  <!-- ================= PORTUGUÊS ================= -->
+  <div class="lang-block" id="pt">
+    <div class="destacado">
+      <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
+      <div>
+        <strong>Em resumo:</strong> O Contramestre não recolhe, armazena nem transmite quaisquer dados
+        pessoais. Tudo o que introduzes fica guardado apenas no teu dispositivo. Não há servidores,
+        contas de utilizador, publicidade nem rastreio de qualquer tipo.
+      </div>
+    </div>
+
+    <section>
+      <h3>1. Responsável</h3>
+      <p>Esta aplicação, <strong>O Contramestre</strong> (El Contramaestre), é desenvolvida e publicada
+         por <strong>José Cuervo</strong>, programador independente.</p>
+      <p>Para qualquer questão: <a href="mailto:jose.cuervo.acebal@gmail.com"><strong>jose.cuervo.acebal@gmail.com</strong></a></p>
+    </section>
+
+    <section>
+      <h3>2. Que dados são recolhidos</h3>
+      <p><strong>Nenhum.</strong> A aplicação não exige registo, não cria contas e não envia informação
+         para nenhum servidor, seja do programador ou de terceiros.</p>
+      <p>O que introduzes — nome da embarcação, modelo do motor, datas de manutenção, horas do motor,
+         inventário de segurança e as tuas notas — é guardado exclusivamente no armazenamento local do
+         teu dispositivo.</p>
+      <p>Se desinstalares a aplicação sem fazer uma cópia de segurança, essa informação perde-se
+         definitivamente.</p>
+    </section>
+
+    <section>
+      <h3>3. Permissões solicitadas</h3>
+      <table>
+        <tr><th>Permissão</th><th>Para que serve</th></tr>
+        <tr><td><strong>Localização</strong></td>
+            <td>Apenas para mostrar a tua latitude e longitude no ecrã de socorro, em formato náutico,
+                para que a possas transmitir por rádio numa emergência. A posição é calculada no
+                dispositivo e <strong>não é guardada nem enviada</strong>. Podes recusar esta permissão:
+                o resto da aplicação funciona na mesma.</td></tr>
+        <tr><td><strong>Notificações</strong></td>
+            <td>Para te avisar antes de uma manutenção vencer ou de um material de segurança caducar.
+                Os avisos são gerados inteiramente no teu dispositivo.</td></tr>
+        <tr><td><strong>Alarmes exatos</strong></td>
+            <td>Para que esses avisos cheguem no dia previsto e não com atraso.</td></tr>
+        <tr><td><strong>Armazenamento</strong></td>
+            <td>Apenas quando tocas em «Exportar cópia», para escrever o ficheiro de cópia de segurança
+                que depois escolhes onde guardar ou partilhar.</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>4. Compras na aplicação</h3>
+      <p>A aplicação oferece uma compra única e opcional para desbloquear todas as funções. Essa
+         transação é gerida integralmente pelo <strong>Google Play</strong>.</p>
+      <p>O programador <strong>não recebe nem armazena</strong> quaisquer dados de pagamento. A aplicação
+         apenas pergunta ao Google Play se essa compra existe, para saber se deve desbloquear as funções.</p>
+      <p>O tratamento pelo Google rege-se pela sua própria política:
+         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+    </section>
+
+    <section>
+      <h3>5. Publicidade e análise</h3>
+      <p>A aplicação <strong>não contém publicidade</strong> e <strong>não utiliza ferramentas de análise
+         ou rastreio</strong> de qualquer tipo.</p>
+    </section>
+
+    <section>
+      <h3>6. Menores</h3>
+      <p>A aplicação destina-se a maiores de idade responsáveis por uma embarcação de recreio. Não
+         recolhendo qualquer dado, também não recolhe dados de menores.</p>
+    </section>
+
+    <section>
+      <h3>7. Os teus direitos</h3>
+      <p>O RGPD reconhece direitos de acesso, retificação, apagamento e portabilidade. Podes exercê-los
+         diretamente, a qualquer momento:</p>
+      <ul>
+        <li><strong>Aceder e retificar:</strong> toda a informação está visível e é editável na aplicação.</li>
+        <li><strong>Apagar:</strong> desinstalando a aplicação ou usando «Restaurar modelos de origem».</li>
+        <li><strong>Portabilidade:</strong> «Exportar cópia» dá-te todos os teus dados num ficheiro padrão.</li>
+      </ul>
+      <p>Como o programador não dispõe de dados teus, não pode aceder-lhes, alterá-los nem eliminá-los
+         em teu nome.</p>
+    </section>
+
+    <section>
+      <h3>8. Aviso importante sobre a utilização</h3>
+      <p>O Contramestre é uma ferramenta de apoio e lembrete. Os intervalos de manutenção e as listas de
+         material de segurança são <strong>indicativos</strong>.</p>
+      <p>Prevalecem sempre o manual do fabricante do teu motor, o de cada equipamento e a legislação
+         aplicável à tua embarcação. O ecrã de socorro não substitui a formação náutica nem os
+         procedimentos oficiais de emergência.</p>
+    </section>
+
+    <section>
+      <h3>9. Alterações</h3>
+      <p>Qualquer versão atualizada será publicada aqui com a respetiva data. Se alguma alteração
+         implicasse a recolha de dados pessoais — o que hoje não acontece — o teu consentimento
+         explícito seria solicitado previamente.</p>
+    </section>
+  </div>
+
+</div>
+
+<footer>
+  El Contramaestre · © 2026 José Cuervo
+</footer>
+
+<script>
+  function setLang(code){
+    document.querySelectorAll('.lang-block').forEach(function(b){
+      b.classList.toggle('on', b.id === code);
+    });
+    document.documentElement.lang = code;
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+  // si el navegador está en uno de los idiomas, se muestra ese
+  (function(){
+    var n = (navigator.language||'es').slice(0,2);
+    if (['es','en','fr','pt'].indexOf(n) >= 0) setLang(n);
+  })();
+</script>
+
+</body>
+</html>
