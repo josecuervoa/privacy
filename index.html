@@ -137,7 +137,9 @@
     background:rgba(216,179,106,.14);color:var(--brass);border:1px solid rgba(216,179,106,.32)}
   .soon h2{font-family:var(--display);font-size:clamp(27px,4.2vw,38px);font-weight:800;
     letter-spacing:-.015em;margin-bottom:14px}
-  .soon > .soon-in > p{color:var(--mute);font-size:17px;max-width:56ch;margin-bottom:28px}
+  .soon-lead{color:var(--mute);font-size:17px;max-width:60ch;margin-bottom:28px}
+  .soon-foot{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);
+    color:var(--mute);font-size:15px;font-style:italic}
   .soon-grid{display:grid;gap:14px}
   @media(min-width:760px){ .soon-grid{grid-template-columns:repeat(2,1fr)} }
   .soon-item{display:flex;gap:13px;padding:16px 18px;border-radius:14px;
@@ -193,6 +195,9 @@
   <symbol id="i-wind" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/><path d="M9.8 4.4A2 2 0 1 1 11 8H2"/></symbol>
   <symbol id="i-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
   <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></symbol>
   <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/></symbol>
 </svg>
 
@@ -514,33 +519,61 @@
   <div class="wrap">
     <div class="soon rise">
       <div class="soon-in">
-        <span class="tag">Próximamente</span>
-        <h2>VMG Calculator</h2>
-        <p>La herramienta que faltaba para sacarle el máximo partido a cada bordo.
-           Del mismo autor, con la misma filosofía: rápida, sin conexión y sin florituras.</p>
+        <span class="tag">Próximamente en Google Play</span>
+        <h2>Ojo Marinero</h2>
+        <p class="soon-lead">Táctica de regata y VMG, pensada por y para regatistas. La primera app de
+           táctica de vela completamente en español, con el motor de cálculo más fiel del mercado
+           a tu barco real.</p>
 
         <div class="soon-grid">
           <div class="soon-item">
-            <svg width="21" height="21" style="color:var(--brass);flex-shrink:0;margin-top:2px"><use href="#i-gauge"/></svg>
-            <div><b>VMG en tiempo real</b>
-              <span>Tu velocidad efectiva hacia el objetivo, actualizada al instante</span></div>
+            <svg width="21" height="21" style="color:var(--brass);flex-shrink:0;margin-top:2px"><use href="#i-chart"/></svg>
+            <div><b>Polares reales, no genéricas</b>
+              <span>Certificados ORC promediados de tu propia flota, con los ángulos óptimos de
+                    ceñida y empopada. No una tabla estándar de fábrica.</span></div>
           </div>
           <div class="soon-item">
             <svg width="21" height="21" style="color:var(--brass);flex-shrink:0;margin-top:2px"><use href="#i-wind"/></svg>
-            <div><b>Ángulos óptimos</b>
-              <span>El mejor rumbo de ceñida y de empopada para el viento que tienes</span></div>
+            <div><b>Física de verdad tras el rumbo óptimo</b>
+              <span>Viento, mar —por el ángulo con que la coges y su resonancia con tu eslora—
+                    y tripulación en banda: todo entra en el cálculo.</span></div>
+          </div>
+          <div class="soon-item">
+            <svg width="21" height="21" style="color:var(--brass);flex-shrink:0;margin-top:2px"><use href="#i-buoy"/></svg>
+            <div><b>Datos reales de boya, al momento</b>
+              <span>Conectada a 35 estaciones de Puertos del Estado: boyas de oleaje y mareógrafos
+                    con viento al minuto en toda la costa española.</span></div>
           </div>
           <div class="soon-item">
             <svg width="21" height="21" style="color:var(--brass);flex-shrink:0;margin-top:2px"><use href="#i-target"/></svg>
-            <div><b>Laylines</b>
-              <span>Cuándo virar para llegar a la baliza sin dar un metro de más</span></div>
+            <div><b>Campo de regatas sin adivinar</b>
+              <span>Marca la línea y la app deduce sola la boya de barlovento. Solo necesitas
+                    la distancia del bordo.</span></div>
           </div>
           <div class="soon-item">
-            <svg width="21" height="21" style="color:var(--brass);flex-shrink:0;margin-top:2px"><use href="#i-chart"/></svg>
-            <div><b>Polares de tu barco</b>
-              <span>Ajusta la curva a tu casco y a tu aparejo</span></div>
+            <svg width="21" height="21" style="color:var(--brass);flex-shrink:0;margin-top:2px"><use href="#i-gauge"/></svg>
+            <div><b>Estrategia de roles con ganancia calculada</b>
+              <span>No solo te dice hacia dónde ir: te dice cuánto vas a ganar.</span></div>
+          </div>
+          <div class="soon-item">
+            <svg width="21" height="21" style="color:var(--brass);flex-shrink:0;margin-top:2px"><use href="#i-map"/></svg>
+            <div><b>Carta táctica y satélite</b>
+              <span>Con laylines, bordadas planificadas y tu posición GPS en vivo. Funciona
+                    incluso sin cobertura en el mar.</span></div>
+          </div>
+          <div class="soon-item">
+            <svg width="21" height="21" style="color:var(--brass);flex-shrink:0;margin-top:2px"><use href="#i-route"/></svg>
+            <div><b>Boyas guardadas y rutas de varias balizas</b>
+              <span>Para triángulos y costeras.</span></div>
+          </div>
+          <div class="soon-item">
+            <svg width="21" height="21" style="color:var(--brass);flex-shrink:0;margin-top:2px"><use href="#i-book"/></svg>
+            <div><b>Manual y guía de regata integrados</b>
+              <span>Paso a paso, dentro de la propia aplicación.</span></div>
           </div>
         </div>
+
+        <p class="soon-foot">Ideada y desarrollada por un regatista, para regatistas de la costa española.</p>
       </div>
     </div>
   </div>
@@ -598,7 +631,7 @@
     <a href="https://josecuervoa.github.io/privacy/elcontramaestre/">Política de privacidad</a>
     <a href="mailto:jose.cuervo.acebal@gmail.com">Contacto</a>
     <a href="#funciones">Funciones</a>
-    <a href="#proximamente">VMG Calculator</a>
+    <a href="#proximamente">Ojo Marinero</a>
   </div>
   <small>
     Diseñada por <b style="color:var(--brass)">José Cuervo</b><br>
