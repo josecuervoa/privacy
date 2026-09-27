@@ -83,7 +83,7 @@
   <div class="hero">
     <div class="eyebrow">Política de privacidad</div>
     <h2>No recogemos ningún dato tuyo</h2>
-    <p class="updated">Última actualización: 19 de agosto de 2026</p>
+    <p class="updated">Última actualización: 27 de septiembre de 2026</p>
   </div>
 
   <div class="langs">
@@ -99,10 +99,10 @@
     <div class="destacado">
       <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
       <div>
-        <strong>En resumen:</strong> Ojo Marinero no recoge, almacena ni transmite ningún dato personal.
-        Tu posición GPS se usa dentro del dispositivo y no sale de él. Todo lo que configuras se guarda
-        únicamente en tu propio dispositivo. No hay servidores, ni cuentas de usuario, ni publicidad,
-        ni seguimiento de ningún tipo.
+        <strong>En resumen:</strong> Ojo Marinero no recoge ni transmite ningún dato personal.
+        Tu posición GPS se usa dentro del dispositivo y no sale de él. Lo que configuras y, si usas el
+        cronómetro de salida, el recorrido de tu regata se guardan únicamente en tu propio dispositivo.
+        No hay servidores propios, ni cuentas de usuario, ni publicidad, ni seguimiento de ningún tipo.
       </div>
     </div>
 
@@ -120,10 +120,18 @@
          envía información a ningún servidor propio.</p>
       <p>Lo que configuras —el barco y sus polares, el viento y el estado de la mar, la tripulación,
          la línea de salida, las boyas que guardas, las rutas de balizas y tus preferencias de idioma
-         y de mapa— se guarda exclusivamente en el almacenamiento local de tu dispositivo. Ni el
-         desarrollador ni nadie más tiene acceso a ello.</p>
-      <p>Puedes borrar esa información en cualquier momento desde <strong>Parámetros → Reiniciar los
-         ajustes</strong>, eliminando cada boya o polar con su botón, o desinstalando la aplicación.</p>
+         y de mapa— se guarda exclusivamente en el almacenamiento local de tu dispositivo, igual que
+         la marca de que has comprado la versión completa. Ni el desarrollador ni nadie más tiene
+         acceso a ello.</p>
+      <p><strong>Recorrido de la regata (track).</strong> Mientras el cronómetro de salida está en
+         marcha, la aplicación guarda en tu dispositivo tu posición, la hora, la velocidad y el rumbo cada
+         dos segundos, hasta un máximo de 4 horas, para que puedas revisar la regata y exportarla como
+         fichero GPX. Ese recorrido no sale del dispositivo salvo que tú lo compartas con el botón
+         «Descargar GPX».</p>
+      <p>Puedes borrar esa información en cualquier momento: el recorrido, con «Borrar» en el
+         asistente de salida; los ajustes, desde <strong>Parámetros → Reiniciar los ajustes</strong>
+         (que conserva el barco, las boyas, las polares y el recorrido); cada boya o polar, con su
+         botón; y todo, desinstalando la aplicación.</p>
     </section>
 
     <section>
@@ -134,23 +142,25 @@
           <td><strong>Ubicación</strong></td>
           <td>Es el permiso principal de la aplicación: con tu posición se calculan el rumbo y la
               distancia a la boya, la distancia a la línea de salida y tu velocidad sobre el fondo.
-              La posición se calcula y se usa <strong>en el propio dispositivo</strong>, en tiempo real.
-              <strong>No se guarda ningún historial de posiciones y no se envía a ninguna parte.</strong>
+              La posición se calcula y se usa <strong>en el propio dispositivo</strong>, en tiempo real,
+              y <strong>no se envía a ninguna parte</strong>. Solo se guarda un historial de posiciones
+              —el recorrido de la regata descrito en el punto 2— mientras el cronómetro de salida está en
+              marcha, y se queda en tu dispositivo.
               Puedes denegar el permiso: la aplicación sigue funcionando introduciendo el rumbo y la
               distancia a mano, aunque pierdes el seguimiento en vivo.</td>
         </tr>
         <tr>
           <td><strong>Internet</strong></td>
-          <td>Solo para dos cosas opcionales: traer los datos reales de una boya cuando pulsas el botón,
-              y descargar las imágenes si eliges la capa de satélite del mapa. Todos los cálculos
-              funcionan sin conexión.</td>
+          <td>Para tres cosas: traer los datos reales de una boya cuando pulsas el botón; descargar el
+              mapa y sus imágenes si eliges la capa de satélite; y comprobar con Google Play si has comprado
+              la versión completa. Todos los cálculos funcionan sin conexión.</td>
         </tr>
       </table>
     </section>
 
     <section>
       <h3>4. Conexiones a internet y origen de los datos</h3>
-      <p>La aplicación se conecta únicamente a estos tres servicios, y solo en los casos indicados:</p>
+      <p>La aplicación se conecta únicamente a estos servicios, y solo en los casos indicados:</p>
       <table>
         <tr><th>Servicio</th><th>Cuándo</th><th>Qué se envía</th></tr>
         <tr>
@@ -168,6 +178,16 @@
           <td>Solo si eliges la capa «Satélite» del mapa</td>
           <td>Las coordenadas de la zona del mapa que estás viendo, para descargar sus imágenes.</td>
         </tr>
+        <tr>
+          <td><strong>Google Play</strong><br><span style="font-size:13px">play.google.com</span></td>
+          <td>Al abrir la aplicación, al comprar y al pulsar «Restaurar compra»</td>
+          <td>La consulta de si tu cuenta de Google Play tiene comprada la versión completa. La gestiona el propio sistema de Google Play.</td>
+        </tr>
+        <tr>
+          <td><strong>unpkg / jsDelivr</strong><br><span style="font-size:13px">unpkg.com · cdn.jsdelivr.net</span></td>
+          <td>Solo la primera vez que eliges la capa «Satélite», si la biblioteca del mapa no viene incluida en la aplicación</td>
+          <td>Nada tuyo: se descarga la biblioteca pública de mapas Leaflet.</td>
+        </tr>
       </table>
       <p>Estos servicios son ajenos al desarrollador y se rigen por sus propias políticas de privacidad.
          Como en cualquier petición a internet, pueden registrar la dirección IP de la conexión.</p>
@@ -180,12 +200,14 @@
 
     <section>
       <h3>5. Compras dentro de la aplicación</h3>
-      <p>En su versión actual la aplicación <strong>SI incluye compras integradas</strong>.</p>
-      <p>Si en el futuro se añadiese alguna, la transacción la gestionaría íntegramente
-         <strong>Google Play</strong>: el desarrollador no recibiría ni almacenaría dato de pago alguno
-         —ni número de tarjeta, ni nombre, ni dirección—, y la aplicación se limitaría a consultar a
-         Google Play si la compra existe. El tratamiento que Google hace de esos datos se rige por su
-         propia política: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+      <p>La aplicación ofrece una <strong>compra única</strong> que desbloquea la versión completa. Es
+         opcional: la parte gratuita funciona sin comprar nada.</p>
+      <p>La transacción la gestiona íntegramente <strong>Google Play</strong>: el desarrollador no recibe
+         ni almacena dato de pago alguno —ni número de tarjeta, ni nombre, ni dirección—. La aplicación
+         solo consulta a Google Play si la compra existe (al abrirse, al comprar y al restaurar) y guarda
+         en tu dispositivo una marca para funcionar sin cobertura. El tratamiento que Google hace de esos
+         datos se rige por su propia política:
+         <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
     </section>
 
     <section>
@@ -208,7 +230,7 @@
          momento, sin intermediarios:</p>
       <ul>
         <li><strong>Acceder y rectificar:</strong> toda la configuración está visible y es editable dentro de la propia aplicación.</li>
-        <li><strong>Suprimir:</strong> con «Reiniciar los ajustes», borrando cada boya o polar con su botón, o desinstalando la aplicación.</li>
+        <li><strong>Suprimir:</strong> el recorrido de la regata, con «Borrar» en el asistente de salida; los ajustes, con «Reiniciar los ajustes»; cada boya o polar, con su botón; o todo, desinstalando la aplicación.</li>
       </ul>
       <p>Como el desarrollador no dispone de ningún dato tuyo, no puede acceder a ellos, modificarlos ni
          eliminarlos en tu nombre.</p>
@@ -241,10 +263,10 @@
     <div class="destacado">
       <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
       <div>
-        <strong>In short:</strong> Ojo Marinero does not collect, store or transmit any personal data.
-        Your GPS position is used inside the device and never leaves it. Everything you configure is
-        saved only on your own device. There are no servers, no user accounts, no advertising and no
-        tracking of any kind.
+        <strong>In short:</strong> Ojo Marinero does not collect or transmit any personal data.
+        Your GPS position is used inside the device and never leaves it. What you configure and, if you use
+        the start countdown, the track of your race are saved only on your own device. There are no servers
+        of our own, no user accounts, no advertising and no tracking of any kind.
       </div>
     </div>
 
@@ -262,9 +284,15 @@
          information to any server of its own.</p>
       <p>What you configure —the boat and its polars, wind and sea state, crew, start line, the marks you
          save, mark routes and your language and map preferences— is stored exclusively in your device's
-         local storage. Neither the developer nor anyone else has access to it.</p>
-      <p>You can erase it at any time from <strong>Settings → Reset settings</strong>, by deleting each
-         mark or polar with its own button, or by uninstalling the app.</p>
+         local storage, as is the flag saying you bought the full version. Neither the developer nor anyone
+         else has access to it.</p>
+      <p><strong>Race track.</strong> While the start countdown is running, the app stores on your device
+         your position, time, speed and heading every two seconds, up to 4 hours, so you can review the
+         race and export it as a GPX file. The track never leaves the device unless you share it with the
+         "Download GPX" button.</p>
+      <p>You can erase this information at any time: the track, with "Delete" in the start assistant;
+         settings, from <strong>Settings → Reset settings</strong> (which keeps the boat, marks, polars and
+         track); each mark or polar, with its own button; and everything, by uninstalling the app.</p>
     </section>
 
     <section>
@@ -275,23 +303,24 @@
           <td><strong>Location</strong></td>
           <td>This is the app's main permission: your position is used to compute the bearing and
               distance to the mark, the distance to the start line and your speed over ground. The
-              position is computed and used <strong>on the device itself</strong>, in real time.
-              <strong>No position history is stored and nothing is sent anywhere.</strong>
+              position is computed and used <strong>on the device itself</strong>, in real time, and
+              <strong>is never sent anywhere</strong>. A position history —the race track described in
+              section 2— is only kept while the start countdown is running, and it stays on your device.
               You may deny the permission: the app still works by entering bearing and distance by hand,
               though you lose live tracking.</td>
         </tr>
         <tr>
           <td><strong>Internet</strong></td>
-          <td>Only for two optional things: fetching real data from a station when you tap the button,
-              and downloading imagery if you choose the satellite map layer. All calculations work
-              offline.</td>
+          <td>For three things: fetching real data from a station when you tap the button; downloading
+              the map and its imagery if you choose the satellite layer; and checking with Google Play whether
+              you bought the full version. All calculations work offline.</td>
         </tr>
       </table>
     </section>
 
     <section>
       <h3>4. Internet connections and data sources</h3>
-      <p>The app connects only to these three services, and only in the cases shown:</p>
+      <p>The app connects only to these services, and only in the cases shown:</p>
       <table>
         <tr><th>Service</th><th>When</th><th>What is sent</th></tr>
         <tr>
@@ -309,6 +338,16 @@
           <td>Only if you choose the "Satellite" map layer</td>
           <td>The coordinates of the map area you are viewing, to download its imagery.</td>
         </tr>
+        <tr>
+          <td><strong>Google Play</strong><br><span style="font-size:13px">play.google.com</span></td>
+          <td>When the app opens, when you buy and when you tap "Restore purchase"</td>
+          <td>The check of whether your Google Play account owns the full version. It is handled by Google Play itself.</td>
+        </tr>
+        <tr>
+          <td><strong>unpkg / jsDelivr</strong><br><span style="font-size:13px">unpkg.com · cdn.jsdelivr.net</span></td>
+          <td>Only the first time you choose the "Satellite" layer, if the map library is not bundled with the app</td>
+          <td>Nothing about you: the public Leaflet map library is downloaded.</td>
+        </tr>
       </table>
       <p>These services are third parties and are governed by their own privacy policies. As with any
          internet request, they may log the IP address of the connection.</p>
@@ -320,11 +359,12 @@
 
     <section>
       <h3>5. In-app purchases</h3>
-      <p>In its current version the app <strong>includes no in-app purchases</strong>.</p>
-      <p>Should any be added in future, the transaction would be handled entirely by
-         <strong>Google Play</strong>: the developer would neither receive nor store any payment data
-         —no card number, no name, no address— and the app would merely ask Google Play whether the
-         purchase exists. Google's handling of that data is governed by its own policy:
+      <p>The app offers a <strong>one-off purchase</strong> that unlocks the full version. It is optional:
+         the free part works without buying anything.</p>
+      <p>The transaction is handled entirely by <strong>Google Play</strong>: the developer receives and
+         stores no payment data at all —no card number, name or address—. The app only asks Google Play
+         whether the purchase exists (on opening, when buying and when restoring) and keeps a flag on your
+         device so it works without coverage. Google's handling of that data is governed by its own policy:
          <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
     </section>
 
@@ -346,7 +386,7 @@
          this app you can exercise them yourself, at any time, with no intermediary:</p>
       <ul>
         <li><strong>Access and rectify:</strong> all settings are visible and editable within the app itself.</li>
-        <li><strong>Erase:</strong> with "Reset settings", by deleting each mark or polar with its button, or by uninstalling the app.</li>
+        <li><strong>Erase:</strong> the race track, with "Delete" in the start assistant; settings, with "Reset settings"; each mark or polar, with its own button; or everything, by uninstalling the app.</li>
       </ul>
       <p>As the developer holds no data about you, he cannot access, modify or delete it on your behalf.</p>
     </section>
@@ -377,10 +417,10 @@
     <div class="destacado">
       <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
       <div>
-        <strong>En résumé :</strong> Ojo Marinero ne collecte, ne stocke ni ne transmet aucune donnée
-        personnelle. Votre position GPS est utilisée dans l'appareil et n'en sort jamais. Tout ce que
-        vous configurez reste enregistré uniquement sur votre appareil. Aucun serveur, aucun compte
-        utilisateur, aucune publicité et aucun suivi.
+        <strong>En résumé :</strong> Ojo Marinero ne collecte ni ne transmet aucune donnée personnelle.
+        Votre position GPS est utilisée dans l'appareil et n'en sort jamais. Ce que vous configurez et, si
+        vous utilisez le chronomètre de départ, la trace de votre régate restent enregistrés uniquement sur
+        votre appareil. Aucun serveur propre, aucun compte utilisateur, aucune publicité et aucun suivi.
       </div>
     </div>
 
@@ -393,16 +433,21 @@
     </section>
 
     <section>
-      <h3>2. Données collectées</h3>
-      <p><strong>Aucune.</strong> L'application ne demande aucune inscription, ne crée aucun compte et
-         n'envoie aucune information vers un serveur qui lui appartienne.</p>
+      <h3>2. Quelles données sont collectées</h3>
+      <p><strong>Aucune.</strong> L'application ne demande aucune inscription, ne crée aucun compte
+         utilisateur et n'envoie aucune information à un serveur propre.</p>
       <p>Ce que vous configurez —le bateau et ses polaires, le vent et l'état de la mer, l'équipage, la
-         ligne de départ, les bouées enregistrées, les routes et vos préférences de langue et de carte—
-         est stocké exclusivement dans la mémoire locale de votre appareil. Ni le développeur ni
-         quiconque d'autre n'y a accès.</p>
-      <p>Vous pouvez tout effacer à tout moment depuis <strong>Paramètres → Réinitialiser les
-         réglages</strong>, en supprimant chaque bouée ou polaire avec son bouton, ou en désinstallant
-         l'application.</p>
+         ligne de départ, les bouées enregistrées, les routes de balises et vos préférences de langue et de
+         carte— est stocké exclusivement dans le stockage local de votre appareil, tout comme l'indication
+         que vous avez acheté la version complète. Ni le développeur ni personne d'autre n'y a accès.</p>
+      <p><strong>Trace de la régate.</strong> Pendant que le chronomètre de départ tourne, l'application
+         enregistre sur votre appareil votre position, l'heure, la vitesse et le cap toutes les deux
+         secondes, jusqu'à 4 heures, pour que vous puissiez revoir la régate et l'exporter en fichier GPX.
+         Cette trace ne quitte pas l'appareil, sauf si vous la partagez avec le bouton « Télécharger le GPX ».</p>
+      <p>Vous pouvez effacer ces informations à tout moment : la trace, avec « Effacer » dans l'assistant de
+         départ ; les réglages, depuis <strong>Paramètres → Réinitialiser les réglages</strong> (qui conserve le
+         bateau, les bouées, les polaires et la trace) ; chaque bouée ou polaire, avec son bouton ; et tout,
+         en désinstallant l'application.</p>
     </section>
 
     <section>
@@ -411,25 +456,26 @@
         <tr><th>Autorisation</th><th>Usage</th></tr>
         <tr>
           <td><strong>Localisation</strong></td>
-          <td>C'est l'autorisation principale de l'application : votre position sert à calculer le cap et
-              la distance à la bouée, la distance à la ligne de départ et votre vitesse fond. La position
-              est calculée et utilisée <strong>sur l'appareil lui-même</strong>, en temps réel.
-              <strong>Aucun historique de positions n'est conservé et rien n'est envoyé nulle part.</strong>
-              Vous pouvez refuser cette autorisation : l'application fonctionne encore en saisissant le
-              cap et la distance à la main, sans le suivi en direct.</td>
+          <td>C'est l'autorisation principale de l'application : votre position sert à calculer le cap et la
+              distance jusqu'à la bouée, la distance à la ligne de départ et votre vitesse fond. La position
+              est calculée et utilisée <strong>sur l'appareil lui-même</strong>, en temps réel, et
+              <strong>n'est envoyée nulle part</strong>. Un historique de positions —la trace de régate du
+              point 2— n'est conservé que pendant que le chronomètre de départ tourne, et reste sur votre appareil.
+              Vous pouvez refuser l'autorisation : l'application fonctionne en saisissant cap et distance à la
+              main, mais vous perdez le suivi en direct.</td>
         </tr>
         <tr>
           <td><strong>Internet</strong></td>
-          <td>Uniquement pour deux fonctions facultatives : récupérer les données réelles d'une station
-              quand vous appuyez sur le bouton, et télécharger les images si vous choisissez la couche
-              satellite. Tous les calculs fonctionnent hors ligne.</td>
+          <td>Pour trois choses : récupérer les données réelles d'une station quand vous touchez le bouton ;
+              télécharger la carte et ses images si vous choisissez la couche satellite ; et vérifier auprès de
+              Google Play si vous avez acheté la version complète. Tous les calculs fonctionnent hors ligne.</td>
         </tr>
       </table>
     </section>
 
     <section>
       <h3>4. Connexions internet et origine des données</h3>
-      <p>L'application ne se connecte qu'à ces trois services, et seulement dans les cas indiqués :</p>
+      <p>L'application se connecte uniquement à ces services, et seulement dans les cas indiqués :</p>
       <table>
         <tr><th>Service</th><th>Quand</th><th>Ce qui est envoyé</th></tr>
         <tr>
@@ -447,6 +493,16 @@
           <td>Seulement si vous choisissez la couche « Satellite »</td>
           <td>Les coordonnées de la zone affichée, pour en télécharger les images.</td>
         </tr>
+        <tr>
+          <td><strong>Google Play</strong><br><span style="font-size:13px">play.google.com</span></td>
+          <td>À l'ouverture de l'application, lors de l'achat et en touchant « Restaurer l'achat »</td>
+          <td>La vérification que votre compte Google Play possède la version complète. Elle est gérée par Google Play.</td>
+        </tr>
+        <tr>
+          <td><strong>unpkg / jsDelivr</strong><br><span style="font-size:13px">unpkg.com · cdn.jsdelivr.net</span></td>
+          <td>Seulement la première fois que vous choisissez la couche « Satellite », si la bibliothèque de carte n'est pas incluse dans l'application</td>
+          <td>Rien vous concernant : la bibliothèque publique de cartes Leaflet est téléchargée.</td>
+        </tr>
       </table>
       <p>Ces services sont des tiers et relèvent de leurs propres politiques de confidentialité. Comme
          pour toute requête internet, ils peuvent enregistrer l'adresse IP de la connexion.</p>
@@ -459,12 +515,14 @@
 
     <section>
       <h3>5. Achats intégrés</h3>
-      <p>Dans sa version actuelle, l'application <strong>ne comporte aucun achat intégré</strong>.</p>
-      <p>Si un achat était ajouté à l'avenir, la transaction serait entièrement gérée par
-         <strong>Google Play</strong> : le développeur ne recevrait ni ne conserverait aucune donnée de
-         paiement —ni numéro de carte, ni nom, ni adresse— et l'application se contenterait de demander à
-         Google Play si l'achat existe. Le traitement de ces données par Google relève de sa propre
-         politique : <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+      <p>L'application propose un <strong>achat unique</strong> qui débloque la version complète. Il est
+         facultatif : la partie gratuite fonctionne sans rien acheter.</p>
+      <p>La transaction est entièrement gérée par <strong>Google Play</strong> : le développeur ne reçoit ni
+         ne stocke aucune donnée de paiement —ni numéro de carte, ni nom, ni adresse—. L'application demande
+         seulement à Google Play si l'achat existe (à l'ouverture, à l'achat et à la restauration) et garde
+         une indication sur votre appareil pour fonctionner sans couverture. Le traitement de ces données
+         par Google relève de sa propre politique :
+         <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
     </section>
 
     <section>
@@ -486,7 +544,7 @@
          cette application, vous pouvez les exercer vous-même, à tout moment, sans intermédiaire :</p>
       <ul>
         <li><strong>Accéder et rectifier :</strong> tous les réglages sont visibles et modifiables dans l'application.</li>
-        <li><strong>Effacer :</strong> via « Réinitialiser les réglages », en supprimant chaque bouée ou polaire, ou en désinstallant l'application.</li>
+        <li><strong>Effacer :</strong> la trace de régate, avec « Effacer » dans l'assistant de départ ; les réglages, avec « Réinitialiser les réglages » ; chaque bouée ou polaire, avec son bouton ; ou tout, en désinstallant l'application.</li>
       </ul>
       <p>Comme le développeur ne détient aucune donnée vous concernant, il ne peut ni y accéder, ni les
          modifier, ni les supprimer en votre nom.</p>
@@ -519,10 +577,10 @@
     <div class="destacado">
       <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
       <div>
-        <strong>Em resumo:</strong> a Ojo Marinero não recolhe, não armazena nem transmite qualquer dado
-        pessoal. A tua posição GPS é usada dentro do dispositivo e nunca sai dele. Tudo o que configuras
-        fica guardado apenas no teu próprio dispositivo. Não há servidores, nem contas de utilizador,
-        nem publicidade, nem qualquer tipo de rastreio.
+        <strong>Em resumo:</strong> o Ojo Marinero não recolhe nem transmite nenhum dado pessoal.
+        A sua posição GPS é usada dentro do dispositivo e não sai dele. O que configura e, se usar o
+        cronómetro de partida, o percurso da sua regata ficam guardados apenas no seu dispositivo. Não há
+        servidores próprios, nem contas de utilizador, nem publicidade, nem rastreio de qualquer tipo.
       </div>
     </div>
 
@@ -536,15 +594,19 @@
 
     <section>
       <h3>2. Que dados são recolhidos</h3>
-      <p><strong>Nenhum.</strong> A aplicação não exige registo, não cria contas de utilizador e não envia
-         informação para qualquer servidor próprio.</p>
-      <p>O que configuras —o barco e as suas polares, o vento e o estado do mar, a tripulação, a linha de
-         partida, as boias que guardas, as rotas de balizas e as tuas preferências de idioma e de mapa—
-         é guardado exclusivamente no armazenamento local do teu dispositivo. Nem o programador nem
-         ninguém mais tem acesso.</p>
-      <p>Podes apagar essa informação a qualquer momento em <strong>Parâmetros → Reiniciar as
-         definições</strong>, eliminando cada boia ou polar com o seu botão, ou desinstalando a
-         aplicação.</p>
+      <p><strong>Nenhum.</strong> A aplicação não pede registo, não cria contas de utilizador e não envia
+         informação para nenhum servidor próprio.</p>
+      <p>O que configura —o barco e as suas polares, o vento e o estado do mar, a tripulação, a linha de
+         partida, as boias que guarda, as rotas de balizas e as suas preferências de idioma e de mapa— é
+         guardado exclusivamente no armazenamento local do seu dispositivo, tal como a indicação de que
+         comprou a versão completa. Nem o programador nem mais ninguém tem acesso a isso.</p>
+      <p><strong>Percurso da regata (track).</strong> Enquanto o cronómetro de partida está a correr, a
+         aplicação guarda no seu dispositivo a posição, a hora, a velocidade e o rumo a cada dois segundos,
+         até um máximo de 4 horas, para que possa rever a regata e exportá-la como ficheiro GPX. Esse percurso
+         não sai do dispositivo, a não ser que o partilhe com o botão «Descargar GPX».</p>
+      <p>Pode apagar esta informação a qualquer momento: o percurso, com «Borrar» no assistente de partida;
+         as definições, em <strong>Parámetros → Reiniciar los ajustes</strong> (que mantém o barco, as boias,
+         as polares e o percurso); cada boia ou polar, com o seu botão; e tudo, desinstalando a aplicação.</p>
     </section>
 
     <section>
@@ -553,25 +615,26 @@
         <tr><th>Permissão</th><th>Para que serve</th></tr>
         <tr>
           <td><strong>Localização</strong></td>
-          <td>É a permissão principal da aplicação: com a tua posição calculam-se o rumo e a distância à
-              boia, a distância à linha de partida e a tua velocidade sobre o fundo. A posição é
-              calculada e usada <strong>no próprio dispositivo</strong>, em tempo real.
-              <strong>Não é guardado qualquer histórico de posições e nada é enviado para lado nenhum.</strong>
-              Podes recusar a permissão: a aplicação continua a funcionar introduzindo o rumo e a
-              distância à mão, embora percas o seguimento em direto.</td>
+          <td>É a permissão principal da aplicação: com a sua posição calculam-se o rumo e a distância à
+              boia, a distância à linha de partida e a sua velocidade sobre o fundo. A posição é calculada e
+              usada <strong>no próprio dispositivo</strong>, em tempo real, e <strong>não é enviada para lado
+              nenhum</strong>. Só se guarda um histórico de posições —o percurso da regata descrito no ponto 2—
+              enquanto o cronómetro de partida está a correr, e fica no seu dispositivo.
+              Pode recusar a permissão: a aplicação continua a funcionar introduzindo o rumo e a distância à
+              mão, embora perca o seguimento em direto.</td>
         </tr>
         <tr>
           <td><strong>Internet</strong></td>
-          <td>Apenas para duas coisas opcionais: obter os dados reais de uma estação quando premes o
-              botão, e descarregar as imagens se escolheres a camada de satélite. Todos os cálculos
-              funcionam sem ligação.</td>
+          <td>Para três coisas: obter os dados reais de uma estação quando toca no botão; descarregar o mapa
+              e as suas imagens se escolher a camada de satélite; e verificar junto do Google Play se comprou a
+              versão completa. Todos os cálculos funcionam sem ligação.</td>
         </tr>
       </table>
     </section>
 
     <section>
       <h3>4. Ligações à internet e origem dos dados</h3>
-      <p>A aplicação liga-se apenas a estes três serviços, e só nos casos indicados:</p>
+      <p>A aplicação liga-se apenas a estes serviços, e só nos casos indicados:</p>
       <table>
         <tr><th>Serviço</th><th>Quando</th><th>O que é enviado</th></tr>
         <tr>
@@ -589,6 +652,16 @@
           <td>Só se escolheres a camada «Satélite»</td>
           <td>As coordenadas da zona do mapa que estás a ver, para descarregar as suas imagens.</td>
         </tr>
+        <tr>
+          <td><strong>Google Play</strong><br><span style="font-size:13px">play.google.com</span></td>
+          <td>Ao abrir a aplicação, ao comprar e ao tocar em «Restaurar compra»</td>
+          <td>A verificação de que a sua conta Google Play tem a versão completa. É gerida pelo próprio Google Play.</td>
+        </tr>
+        <tr>
+          <td><strong>unpkg / jsDelivr</strong><br><span style="font-size:13px">unpkg.com · cdn.jsdelivr.net</span></td>
+          <td>Só na primeira vez que escolhe a camada «Satélite», se a biblioteca do mapa não vier incluída na aplicação</td>
+          <td>Nada seu: descarrega-se a biblioteca pública de mapas Leaflet.</td>
+        </tr>
       </table>
       <p>Estes serviços são de terceiros e regem-se pelas suas próprias políticas de privacidade. Como em
          qualquer pedido à internet, podem registar o endereço IP da ligação.</p>
@@ -601,12 +674,14 @@
 
     <section>
       <h3>5. Compras na aplicação</h3>
-      <p>Na sua versão atual a aplicação <strong>não inclui compras integradas</strong>.</p>
-      <p>Se no futuro alguma for adicionada, a transação seria gerida integralmente pelo
-         <strong>Google Play</strong>: o programador não receberia nem armazenaria qualquer dado de
-         pagamento —nem número de cartão, nem nome, nem morada— e a aplicação limitar-se-ia a perguntar
-         ao Google Play se a compra existe. O tratamento desses dados pela Google rege-se pela sua
-         própria política: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+      <p>A aplicação oferece uma <strong>compra única</strong> que desbloqueia a versão completa. É
+         opcional: a parte gratuita funciona sem comprar nada.</p>
+      <p>A transação é gerida integralmente pelo <strong>Google Play</strong>: o programador não recebe nem
+         guarda nenhum dado de pagamento —nem número de cartão, nem nome, nem morada—. A aplicação apenas
+         pergunta ao Google Play se a compra existe (ao abrir, ao comprar e ao restaurar) e guarda no seu
+         dispositivo uma indicação para funcionar sem rede. O tratamento que a Google faz desses dados rege-se
+         pela sua própria política:
+         <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
     </section>
 
     <section>
@@ -628,7 +703,7 @@
          podes exercê-los diretamente, a qualquer momento, sem intermediários:</p>
       <ul>
         <li><strong>Aceder e retificar:</strong> toda a configuração está visível e é editável dentro da própria aplicação.</li>
-        <li><strong>Apagar:</strong> com «Reiniciar as definições», eliminando cada boia ou polar com o seu botão, ou desinstalando a aplicação.</li>
+        <li><strong>Apagar:</strong> o percurso da regata, com «Borrar» no assistente de partida; as definições, com «Reiniciar los ajustes»; cada boia ou polar, com o seu botão; ou tudo, desinstalando a aplicação.</li>
       </ul>
       <p>Como o programador não dispõe de qualquer dado teu, não pode aceder-lhes, modificá-los nem
          eliminá-los em teu nome.</p>
