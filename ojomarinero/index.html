@@ -83,7 +83,7 @@
   <div class="hero">
     <div class="eyebrow">Política de privacidad</div>
     <h2>No recogemos ningún dato tuyo</h2>
-    <p class="updated">Última actualización: 27 de septiembre de 2026</p>
+    <p class="updated">Última actualización: 29 de septiembre de 2026</p>
   </div>
 
   <div class="langs">
@@ -100,7 +100,7 @@
       <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
       <div>
         <strong>En resumen:</strong> Ojo Marinero no recoge ni transmite ningún dato personal.
-        Tu posición GPS se usa dentro del dispositivo y no sale de él. Lo que configuras y, si usas el
+        Tu posición GPS se usa dentro del dispositivo y no se envía como dato a ningún sitio (si eliges la capa Satélite, el servicio de mapas recibe la zona que estás viendo; ver el punto 4). Lo que configuras y, si usas el
         cronómetro de salida, el recorrido de tu regata se guardan únicamente en tu propio dispositivo.
         No hay servidores propios, ni cuentas de usuario, ni publicidad, ni seguimiento de ningún tipo.
       </div>
@@ -143,7 +143,7 @@
           <td>Es el permiso principal de la aplicación: con tu posición se calculan el rumbo y la
               distancia a la boya, la distancia a la línea de salida y tu velocidad sobre el fondo.
               La posición se calcula y se usa <strong>en el propio dispositivo</strong>, en tiempo real,
-              y <strong>no se envía a ninguna parte</strong>. Solo se guarda un historial de posiciones
+              y <strong>no se envía como dato a ninguna parte</strong>. Solo se guarda un historial de posiciones
               —el recorrido de la regata descrito en el punto 2— mientras el cronómetro de salida está en
               marcha, y se queda en tu dispositivo.
               Puedes denegar el permiso: la aplicación sigue funcionando introduciendo el rumbo y la
@@ -152,7 +152,7 @@
         <tr>
           <td><strong>Internet</strong></td>
           <td>Para tres cosas: traer los datos reales de una boya cuando pulsas el botón; descargar el
-              mapa y sus imágenes si eliges la capa de satélite; y comprobar con Google Play si has comprado
+              mapa (su biblioteca y sus imágenes) si eliges la capa de satélite; y comprobar con Google Play si has comprado
               la versión completa. Todos los cálculos funcionan sin conexión.</td>
         </tr>
       </table>
@@ -170,13 +170,13 @@
         </tr>
         <tr>
           <td><strong>Open-Meteo</strong><br><span style="font-size:13px">open-meteo.com</span></td>
-          <td>Como respaldo, si la estación no ofrece algún parámetro</td>
+          <td>Al pulsar «Traer datos», solo si la estación no responde o le falta algún parámetro</td>
           <td>Las coordenadas <em>de la estación consultada</em>, no las tuyas.</td>
         </tr>
         <tr>
           <td><strong>Esri World Imagery</strong><br><span style="font-size:13px">arcgisonline.com</span></td>
           <td>Solo si eliges la capa «Satélite» del mapa</td>
-          <td>Las coordenadas de la zona del mapa que estás viendo, para descargar sus imágenes.</td>
+          <td>Las coordenadas de la zona del mapa que estás viendo —normalmente alrededor de tu barco—, para descargar sus imágenes.</td>
         </tr>
         <tr>
           <td><strong>Google Play</strong><br><span style="font-size:13px">play.google.com</span></td>
@@ -185,7 +185,7 @@
         </tr>
         <tr>
           <td><strong>unpkg / jsDelivr</strong><br><span style="font-size:13px">unpkg.com · cdn.jsdelivr.net</span></td>
-          <td>Solo la primera vez que eliges la capa «Satélite», si la biblioteca del mapa no viene incluida en la aplicación</td>
+          <td>La primera vez que eliges la capa «Satélite» cada vez que abres la aplicación</td>
           <td>Nada tuyo: se descarga la biblioteca pública de mapas Leaflet.</td>
         </tr>
       </table>
@@ -264,7 +264,7 @@
       <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
       <div>
         <strong>In short:</strong> Ojo Marinero does not collect or transmit any personal data.
-        Your GPS position is used inside the device and never leaves it. What you configure and, if you use
+        Your GPS position is used inside the device and is not sent anywhere as data (if you choose the Satellite layer, the map service receives the area you are viewing; see section 4). What you configure and, if you use
         the start countdown, the track of your race are saved only on your own device. There are no servers
         of our own, no user accounts, no advertising and no tracking of any kind.
       </div>
@@ -304,7 +304,7 @@
           <td>This is the app's main permission: your position is used to compute the bearing and
               distance to the mark, the distance to the start line and your speed over ground. The
               position is computed and used <strong>on the device itself</strong>, in real time, and
-              <strong>is never sent anywhere</strong>. A position history —the race track described in
+              <strong>is not sent anywhere as data</strong>. A position history —the race track described in
               section 2— is only kept while the start countdown is running, and it stays on your device.
               You may deny the permission: the app still works by entering bearing and distance by hand,
               though you lose live tracking.</td>
@@ -312,7 +312,7 @@
         <tr>
           <td><strong>Internet</strong></td>
           <td>For three things: fetching real data from a station when you tap the button; downloading
-              the map and its imagery if you choose the satellite layer; and checking with Google Play whether
+              the map (its library and imagery) if you choose the satellite layer; and checking with Google Play whether
               you bought the full version. All calculations work offline.</td>
         </tr>
       </table>
@@ -330,13 +330,13 @@
         </tr>
         <tr>
           <td><strong>Open-Meteo</strong><br><span style="font-size:13px">open-meteo.com</span></td>
-          <td>As a fallback, if the station does not provide some parameter</td>
+          <td>When you tap “Get data”, only if the station does not respond or lacks some parameter</td>
           <td>The coordinates <em>of the station queried</em>, not yours.</td>
         </tr>
         <tr>
           <td><strong>Esri World Imagery</strong><br><span style="font-size:13px">arcgisonline.com</span></td>
           <td>Only if you choose the "Satellite" map layer</td>
-          <td>The coordinates of the map area you are viewing, to download its imagery.</td>
+          <td>The coordinates of the map area you are viewing —usually around your boat—, to download its imagery.</td>
         </tr>
         <tr>
           <td><strong>Google Play</strong><br><span style="font-size:13px">play.google.com</span></td>
@@ -345,7 +345,7 @@
         </tr>
         <tr>
           <td><strong>unpkg / jsDelivr</strong><br><span style="font-size:13px">unpkg.com · cdn.jsdelivr.net</span></td>
-          <td>Only the first time you choose the "Satellite" layer, if the map library is not bundled with the app</td>
+          <td>The first time you choose the "Satellite" layer each time you open the app</td>
           <td>Nothing about you: the public Leaflet map library is downloaded.</td>
         </tr>
       </table>
@@ -418,7 +418,7 @@
       <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
       <div>
         <strong>En résumé :</strong> Ojo Marinero ne collecte ni ne transmet aucune donnée personnelle.
-        Votre position GPS est utilisée dans l'appareil et n'en sort jamais. Ce que vous configurez et, si
+        Votre position GPS est utilisée dans l'appareil et n'est envoyée nulle part en tant que donnée (si vous choisissez la couche Satellite, le service de cartes reçoit la zone affichée ; voir le point 4). Ce que vous configurez et, si
         vous utilisez le chronomètre de départ, la trace de votre régate restent enregistrés uniquement sur
         votre appareil. Aucun serveur propre, aucun compte utilisateur, aucune publicité et aucun suivi.
       </div>
@@ -459,7 +459,7 @@
           <td>C'est l'autorisation principale de l'application : votre position sert à calculer le cap et la
               distance jusqu'à la bouée, la distance à la ligne de départ et votre vitesse fond. La position
               est calculée et utilisée <strong>sur l'appareil lui-même</strong>, en temps réel, et
-              <strong>n'est envoyée nulle part</strong>. Un historique de positions —la trace de régate du
+              <strong>n'est envoyée nulle part en tant que donnée</strong>. Un historique de positions —la trace de régate du
               point 2— n'est conservé que pendant que le chronomètre de départ tourne, et reste sur votre appareil.
               Vous pouvez refuser l'autorisation : l'application fonctionne en saisissant cap et distance à la
               main, mais vous perdez le suivi en direct.</td>
@@ -485,13 +485,13 @@
         </tr>
         <tr>
           <td><strong>Open-Meteo</strong><br><span style="font-size:13px">open-meteo.com</span></td>
-          <td>En secours, si la station ne fournit pas un paramètre</td>
+          <td>En appuyant sur « Obtenir les données », seulement si la station ne répond pas ou ne fournit pas un paramètre</td>
           <td>Les coordonnées <em>de la station consultée</em>, pas les vôtres.</td>
         </tr>
         <tr>
           <td><strong>Esri World Imagery</strong><br><span style="font-size:13px">arcgisonline.com</span></td>
           <td>Seulement si vous choisissez la couche « Satellite »</td>
-          <td>Les coordonnées de la zone affichée, pour en télécharger les images.</td>
+          <td>Les coordonnées de la zone affichée —en général autour de votre bateau—, pour en télécharger les images.</td>
         </tr>
         <tr>
           <td><strong>Google Play</strong><br><span style="font-size:13px">play.google.com</span></td>
@@ -500,7 +500,7 @@
         </tr>
         <tr>
           <td><strong>unpkg / jsDelivr</strong><br><span style="font-size:13px">unpkg.com · cdn.jsdelivr.net</span></td>
-          <td>Seulement la première fois que vous choisissez la couche « Satellite », si la bibliothèque de carte n'est pas incluse dans l'application</td>
+          <td>La première fois que vous choisissez la couche « Satellite » à chaque ouverture de l'application</td>
           <td>Rien vous concernant : la bibliothèque publique de cartes Leaflet est téléchargée.</td>
         </tr>
       </table>
@@ -539,7 +539,7 @@
     </section>
 
     <section>
-      <h3>8. Tes droits</h3>
+      <h3>8. Vos droits</h3>
       <p>Le RGPD reconnaît des droits d'accès, de rectification, d'effacement et de portabilité. Dans
          cette application, vous pouvez les exercer vous-même, à tout moment, sans intermédiaire :</p>
       <ul>
@@ -578,7 +578,7 @@
       <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
       <div>
         <strong>Em resumo:</strong> o Ojo Marinero não recolhe nem transmite nenhum dado pessoal.
-        A sua posição GPS é usada dentro do dispositivo e não sai dele. O que configura e, se usar o
+        A sua posição GPS é usada dentro do dispositivo e não é enviada como dado para lado nenhum (se escolher a camada Satélite, o serviço de mapas recebe a zona que está a ver; ver o ponto 4). O que configura e, se usar o
         cronómetro de partida, o percurso da sua regata ficam guardados apenas no seu dispositivo. Não há
         servidores próprios, nem contas de utilizador, nem publicidade, nem rastreio de qualquer tipo.
       </div>
@@ -588,7 +588,7 @@
       <h3>1. Responsável</h3>
       <p>Esta aplicação, <strong>Ojo Marinero</strong>, é desenvolvida e publicada por
          <strong>José Cuervo</strong>, programador independente.</p>
-      <p>Para qualquer questão relacionada com esta política podes escrever para:
+      <p>Para qualquer questão relacionada com esta política pode escrever para:
          <a href="mailto:jose.cuervo.acebal@gmail.com"><strong>jose.cuervo.acebal@gmail.com</strong></a></p>
     </section>
 
@@ -617,7 +617,7 @@
           <td><strong>Localização</strong></td>
           <td>É a permissão principal da aplicação: com a sua posição calculam-se o rumo e a distância à
               boia, a distância à linha de partida e a sua velocidade sobre o fundo. A posição é calculada e
-              usada <strong>no próprio dispositivo</strong>, em tempo real, e <strong>não é enviada para lado
+              usada <strong>no próprio dispositivo</strong>, em tempo real, e <strong>não é enviada como dado para lado
               nenhum</strong>. Só se guarda um histórico de posições —o percurso da regata descrito no ponto 2—
               enquanto o cronómetro de partida está a correr, e fica no seu dispositivo.
               Pode recusar a permissão: a aplicação continua a funcionar introduzindo o rumo e a distância à
@@ -639,18 +639,18 @@
         <tr><th>Serviço</th><th>Quando</th><th>O que é enviado</th></tr>
         <tr>
           <td><strong>Puertos del Estado</strong><br><span style="font-size:13px">portus.puertos.es</span></td>
-          <td>Ao premir «Obter dados» de uma estação</td>
-          <td>O identificador público da estação escolhida. Não é enviada a tua posição nem qualquer dado teu.</td>
+          <td>Ao tocar em «Traer datos» (ou «Get data») de uma estação</td>
+          <td>O identificador público da estação escolhida. Não é enviada a sua posição nem qualquer dado seu.</td>
         </tr>
         <tr>
           <td><strong>Open-Meteo</strong><br><span style="font-size:13px">open-meteo.com</span></td>
-          <td>Como alternativa, se a estação não fornecer algum parâmetro</td>
-          <td>As coordenadas <em>da estação consultada</em>, não as tuas.</td>
+          <td>Ao tocar em «Traer datos» (ou «Get data»), só se a estação não responder ou não fornecer algum parâmetro</td>
+          <td>As coordenadas <em>da estação consultada</em>, não as suas.</td>
         </tr>
         <tr>
           <td><strong>Esri World Imagery</strong><br><span style="font-size:13px">arcgisonline.com</span></td>
-          <td>Só se escolheres a camada «Satélite»</td>
-          <td>As coordenadas da zona do mapa que estás a ver, para descarregar as suas imagens.</td>
+          <td>Só se escolher a camada «Satélite»</td>
+          <td>As coordenadas da zona do mapa que está a ver —normalmente à volta do seu barco—, para descarregar as suas imagens.</td>
         </tr>
         <tr>
           <td><strong>Google Play</strong><br><span style="font-size:13px">play.google.com</span></td>
@@ -659,7 +659,7 @@
         </tr>
         <tr>
           <td><strong>unpkg / jsDelivr</strong><br><span style="font-size:13px">unpkg.com · cdn.jsdelivr.net</span></td>
-          <td>Só na primeira vez que escolhe a camada «Satélite», se a biblioteca do mapa não vier incluída na aplicação</td>
+          <td>Na primeira vez que escolhe a camada «Satélite», sempre que abre a aplicação</td>
           <td>Nada seu: descarrega-se a biblioteca pública de mapas Leaflet.</td>
         </tr>
       </table>
@@ -698,15 +698,15 @@
     </section>
 
     <section>
-      <h3>8. Os teus direitos</h3>
+      <h3>8. Os seus direitos</h3>
       <p>O RGPD reconhece direitos de acesso, retificação, apagamento e portabilidade. Nesta aplicação
-         podes exercê-los diretamente, a qualquer momento, sem intermediários:</p>
+         pode exercê-los diretamente, a qualquer momento, sem intermediários:</p>
       <ul>
         <li><strong>Aceder e retificar:</strong> toda a configuração está visível e é editável dentro da própria aplicação.</li>
         <li><strong>Apagar:</strong> o percurso da regata, com «Borrar» no assistente de partida; as definições, com «Reiniciar los ajustes»; cada boia ou polar, com o seu botão; ou tudo, desinstalando a aplicação.</li>
       </ul>
-      <p>Como o programador não dispõe de qualquer dado teu, não pode aceder-lhes, modificá-los nem
-         eliminá-los em teu nome.</p>
+      <p>Como o programador não dispõe de qualquer dado seu, não pode aceder-lhes, modificá-los nem
+         eliminá-los em seu nome.</p>
     </section>
 
     <section>
@@ -724,7 +724,7 @@
       <h3>10. Alterações</h3>
       <p>Se esta política mudar no futuro, será publicada aqui uma versão atualizada com a respetiva
          data. Se alguma alteração implicar a recolha de dados pessoais —o que hoje não acontece— será
-         solicitado o teu consentimento expresso antes disso.</p>
+         solicitado o seu consentimento expresso antes disso.</p>
     </section>
 
   </div>
