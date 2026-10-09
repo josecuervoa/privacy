@@ -165,6 +165,17 @@
   .plan li svg{flex-shrink:0;margin-top:4px;color:var(--accent)}
   .soon{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);
     font-size:14px;color:var(--faint);display:flex;gap:9px;align-items:flex-start}
+
+  /* descarga */
+  .get{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
+  .store{display:inline-flex;align-items:center;gap:12px;padding:13px 22px;border-radius:14px;
+    background:var(--accent);color:var(--accent-ink);transition:transform .18s,filter .2s}
+  .store:hover{transform:translateY(-2px);filter:brightness(1.07)}
+  .store small{display:block;font-size:11px;letter-spacing:.11em;text-transform:uppercase;opacity:.75}
+  .store b{display:block;font-family:var(--display);font-size:16.5px;font-weight:700;line-height:1.2}
+  .store svg{flex-shrink:0}
+  .get>*+*{margin-left:2px}
+  .get .note{font-size:14px;color:var(--faint)}
   .soon svg{flex-shrink:0;margin-top:2px;color:var(--brass)}
 
   /* ============ reglas comunes ============ */
@@ -238,6 +249,7 @@
   <symbol id="i-coin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a3 3 0 0 0-5 2.2c0 2.6 5 1.7 5 4.3a3 3 0 0 1-5 2.2"/><path d="M12 7v10"/></symbol>
   <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></symbol>
   <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-get" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 18v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/></symbol>
   <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
 </svg>
 
@@ -314,8 +326,8 @@
 
     <div class="figs">
       <div><b>40</b><span>barcos con polar sacada de certificados ORC reales</span></div>
-      <div><b>+40</b><span>estaciones de Puertos del Estado con viento al minuto</span></div>
-      <div><b>21.600</b><span>escenarios de prueba sobre el motor de cálculo</span></div>
+      <div><b>48</b><span>estaciones de Puertos del Estado · viento al minuto en&nbsp;22</span></div>
+      <div><b>171.000</b><span>comprobaciones automáticas del motor de cálculo</span></div>
     </div>
 
     <div class="demo">
@@ -352,14 +364,28 @@
         </div>
         <div class="pt">
           <h3><svg width="20" height="20"><use href="#i-buoy"/></svg>Viento medido, no viento previsto</h3>
-          <p>Boyas y mareógrafos de Puertos del Estado, con predicción solo de respaldo cuando no hay
-            medida disponible.</p>
+          <p>Las 48 estaciones de Puertos del Estado repartidas en siete zonas:
+            <b>22 mareógrafos con sensor meteorológico dan el viento al minuto</b>, 16 boyas lo miden
+            ellas mismas y las 12 restantes toman el de la estación más cercana. La app dice de dónde
+            viene el dato en cada caso.</p>
+        </div>
+        <div class="pt">
+          <h3><svg width="20" height="20"><use href="#i-wind"/></svg>Cuando la táctica manda</h3>
+          <p>Si viras para salir de un viento sucio o porque te cierra un derecho,
+            <b>fijas ese rumbo de un toque y la app replantea desde ahí</b> en vez de insistir en su
+            plan. Y una boya mal marcada se corrige arrastrándola sobre la carta.</p>
+        </div>
+        <div class="pt">
+          <h3><svg width="20" height="20"><use href="#i-chart"/></svg>La regata, grabada</h3>
+          <p>Mientras corre el cronómetro la app registra el track. Al terminar te lo llevas
+            <b>en GPX</b> para revisar la regata con calma en casa.</p>
         </div>
         <div class="pt">
           <h3><svg width="20" height="20"><use href="#i-map"/></svg>La línea y el campo, resueltos</h3>
           <p>Marcas los dos extremos navegando hasta ellos: longitud, extremo favorecido y por cuántos
             grados, distancia perpendicular y segundos hasta la línea. <b>El barlovento se deduce solo</b>,
-            sin meter coordenadas.</p>
+            sin meter coordenadas. Todo sobre <b>cartografía oficial del Instituto Hidrográfico de la
+            Marina</b>, dentro de la parte gratuita de la app.</p>
         </div>
       </div>
     </div>
@@ -370,7 +396,8 @@
         <h3>Modo Travesía</h3>
         <ul>
           <li><svg width="17" height="17"><use href="#i-check"/></svg><span><b>Rumbo óptimo y velocidad objetivo</b> con las condiciones de ahora mismo</span></li>
-          <li><svg width="17" height="17"><use href="#i-check"/></svg><span>Datos de boya y diagrama polar de tu barco</span></li>
+          <li><svg width="17" height="17"><use href="#i-check"/></svg><span>Cuatro barcos del catálogo, datos de boya y diagrama polar</span></li>
+          <li><svg width="17" height="17"><use href="#i-check"/></svg><span>Carta con <b>cartografía oficial del Instituto Hidrográfico de la Marina</b></span></li>
           <li><svg width="17" height="17"><use href="#i-check"/></svg><span>Español, inglés y francés, con la terminología náutica de cada idioma</span></li>
         </ul>
       </div>
@@ -380,11 +407,19 @@
         <ul>
           <li><svg width="17" height="17"><use href="#i-check"/></svg><span><b>Asistente de salida</b>: extremo favorecido y cuenta atrás sincronizable</span></li>
           <li><svg width="17" height="17"><use href="#i-check"/></svg><span><b>Laylines y plan de viradas</b> cuando el viento oscila: cuántas hacer y cuánto ganas</span></li>
-          <li><svg width="17" height="17"><use href="#i-check"/></svg><span>Carta táctica, boyas guardadas y rutas de varias balizas con recálculo por tramo</span></li>
+          <li><svg width="17" height="17"><use href="#i-check"/></svg><span><b>Los 40 barcos</b>, carta táctica, boyas guardadas y rutas de varias balizas</span></li>
+          <li><svg width="17" height="17"><use href="#i-check"/></svg><span>Seguimiento GPS en vivo y registro de la regata en GPX</span></li>
         </ul>
-        <div class="soon"><svg width="16" height="16"><use href="#i-alert"/></svg>
-          <span>Android, pendiente de publicación. La versión para iOS llegará después.</span></div>
       </div>
+    </div>
+
+    <div class="get">
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.cuervo250.ojomarinero"
+         rel="noopener">
+        <svg width="24" height="24"><use href="#i-get"/></svg>
+        <span><small>Descargar en</small><b>Google Play</b></span>
+      </a>
+      <span class="note">Gratis, sin anuncios. La versión para iOS llegará después.</span>
     </div>
 
   </div>
@@ -466,6 +501,7 @@
           <li><svg width="17" height="17"><use href="#i-check"/></svg><span><b>Socorro</b>: posición GPS en formato náutico y números de emergencia</span></li>
           <li><svg width="17" height="17"><use href="#i-check"/></svg><span><b>Salidas</b>: comprobaciones antes de zarpar y al regresar</span></li>
           <li><svg width="17" height="17"><use href="#i-check"/></svg><span><b>Panel</b> de estado y cuaderno del barco en PDF</span></li>
+          <li><svg width="17" height="17"><use href="#i-check"/></svg><span>Español, inglés, francés, portugués y polaco</span></li>
         </ul>
       </div>
       <div class="plan paid">
@@ -475,12 +511,22 @@
           <li><svg width="17" height="17"><use href="#i-check"/></svg><span><b>Motor</b>: la lista del fabricante, por horas y por fecha</span></li>
           <li><svg width="17" height="17"><use href="#i-check"/></svg><span><b>Barco</b>: casco, jarcia, electricidad, achique, gas y agua dulce</span></li>
           <li><svg width="17" height="17"><use href="#i-check"/></svg><span><b>Seguridad</b>: material obligatorio por bandera y zona, con caducidades</span></li>
-          <li><svg width="17" height="17"><use href="#i-check"/></svg><span>Flota de varios barcos y copia de seguridad exportable</span></li>
+          <li><svg width="17" height="17"><use href="#i-check"/></svg><span>Hasta <b>tres embarcaciones</b> y copia de seguridad exportable</span></li>
         </ul>
         <div class="soon"><svg width="16" height="16"><use href="#i-alert"/></svg>
-          <span>Android, en revisión. La versión para iOS llegará después.</span></div>
+          <span>Para flotas mayores hay licencia de empresa, sin el límite de tres barcos.</span></div>
       </div>
     </div>
+
+    <div class="get">
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.cuervo250.contramaestre"
+         rel="noopener">
+        <svg width="24" height="24"><use href="#i-get"/></svg>
+        <span><small>Descargar en</small><b>Google Play</b></span>
+      </a>
+      <span class="note">Gratis, sin anuncios. La versión para iOS llegará después.</span>
+    </div>
+
 
   </div>
 </section>
@@ -562,9 +608,11 @@
       orientativos. Prevalecen siempre el manual del fabricante de tu motor, el de cada equipo y la
       normativa vigente aplicable a tu embarcación y zona de navegación. La pantalla de socorro no
       sustituye a la formación náutica ni a los procedimientos oficiales de emergencia.</p>
-    <p>Ojo Marinero es una ayuda a la decisión táctica. Su carta no sustituye a la cartografía náutica
-      oficial ni exime de mantener la vigilancia y el gobierno del barco. ORC y Puertos del Estado son
-      ajenos a estas aplicaciones y no las respaldan.</p>
+    <p>Ojo Marinero es una ayuda a la decisión táctica. Incluye cartografía del Instituto Hidrográfico
+      de la Marina, citado como fuente: no es válida para la navegación, no sustituye a la cartografía
+      náutica oficial ni exime de mantener la vigilancia y el gobierno del barco. El Instituto
+      Hidrográfico de la Marina, ORC y Puertos del Estado son ajenos a estas aplicaciones y no las
+      respaldan.</p>
   </div>
 </footer>
 
