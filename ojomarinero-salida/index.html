@@ -1,1 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Ojo Marinero Salida</title>
+<meta name="description" content="Política de privacidad de la aplicación Ojo Marinero Salida. No recogemos datos personales; solo sale lo que decides compartir en directo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#08111C; --panel:#0E1B2A; --panel-up:#132436; --line:#1D3348;
+    --ink:#E8F1F8; --mute:#8AA0B5; --teal:#3BD9C4; --brass:#D8B36A; --ok:#59C88E;
+    --display:'Bricolage Grotesque',system-ui,sans-serif;
+    --body:'Instrument Sans',system-ui,sans-serif;
+    --mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:80px}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--teal)}
+  header{position:sticky;top:0;z-index:50;background:rgba(8,17,28,.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .head-in{max-width:820px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:14px}
+  .badge{width:42px;height:42px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,#1F6E64,var(--panel-up));border:1px solid rgba(59,217,196,.28)}
+  .brand h1{font-family:var(--display);font-size:18px;line-height:1;font-weight:800}
+  .brand p{font-family:var(--mono);font-size:11.5px;color:var(--mute);margin-top:4px}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px 80px}
+  .hero{padding:48px 0 26px}
+  .hero .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);margin-bottom:12px}
+  .hero h2{font-family:var(--display);font-size:clamp(28px,5vw,42px);line-height:1.1;font-weight:800;letter-spacing:-.015em}
+  .updated{font-family:var(--mono);font-size:13px;color:var(--mute);margin-top:14px}
+  .destacado{display:flex;gap:14px;padding:20px;border-radius:15px;margin:26px 0 34px;
+    background:rgba(89,200,142,.09);border:1px solid rgba(89,200,142,.35)}
+  .destacado strong{color:var(--ok)}
+  .langs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}
+  .langs a{padding:7px 14px;border-radius:10px;background:var(--panel);border:1px solid var(--line);
+    color:var(--mute);text-decoration:none;font-size:14px}
+  .langs a:hover{border-color:rgba(59,217,196,.5);color:var(--ink)}
+  section{scroll-margin-top:80px;padding:28px 0;border-top:1px solid var(--line)}
+  h3{font-family:var(--display);font-size:22px;font-weight:700;margin-bottom:12px}
+  h4{font-size:16px;font-weight:700;color:var(--brass);margin:20px 0 8px}
+  p{margin:0 0 14px;color:var(--mute);max-width:68ch}
+  ul{list-style:none;margin:0 0 16px;max-width:68ch}
+  li{position:relative;padding-left:20px;margin-bottom:9px;color:var(--mute)}
+  li::before{content:"";position:absolute;left:2px;top:11px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+  strong{color:var(--ink);font-weight:600}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);color:var(--mute);vertical-align:top}
+  th{color:var(--ink);font-weight:600}
+  footer{border-top:1px solid var(--line);padding:30px 22px 60px;text-align:center;color:var(--mute);font-size:14px}
+  .lang-block{display:none}
+  .lang-block.on{display:block}
+</style>
+</head>
+<body>
 
+<svg style="display:none">
+  <symbol id="rosa" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <path d="M12 4.5 L14 11 L12 19.5 L10 11 Z" fill="currentColor"/>
+    <circle cx="12" cy="12" r="1.5" fill="#08111C"/>
+  </symbol>
+  <symbol id="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+    <path d="m9 12 2 2 4-4"/>
+  </symbol>
+</svg>
+
+<header>
+  <div class="head-in">
+    <span class="badge" style="color:var(--teal)"><svg width="22" height="22"><use href="#rosa"/></svg></span>
+    <div class="brand">
+      <h1>OJO MARINERO SALIDA</h1>
+      <p>política de privacidad</p>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Política de privacidad</div>
+    <h2>Solo sale lo que tú decides compartir</h2>
+    <p class="updated">Última actualización: 10 de octubre de 2026 · Last updated: 10 October 2026</p>
+  </div>
+
+  <div class="langs">
+    <a href="#" onclick="setLang('es');return false">Español</a>
+    <a href="#" onclick="setLang('en');return false">English</a>
+    <a href="#" onclick="setLang('fr');return false">Français</a>
+    <a href="#" onclick="setLang('pt');return false">Português</a>
+  </div>
+
+  <!-- ================= ESPAÑOL ================= -->
+  <div class="lang-block on" id="es">
+
+    <div class="destacado">
+      <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
+      <div><strong>En resumen:</strong> Ojo Marinero Salida no recoge datos personales y solo transmite lo que tú decides compartir.
+        Tu posición GPS se usa dentro del dispositivo. La línea, el viento y, mientras corre el cronómetro, el recorrido y el cuaderno
+        de tu regata se guardan únicamente en tu propio dispositivo. No hay cuentas de usuario, ni publicidad, ni seguimiento de ningún tipo.
+        La única excepción es <strong>«En directo»</strong>, opcional y apagado si no lo activas tú: entonces tu posición y tu cuaderno de
+        regata se envían a un servidor (Google Firebase, en la Unión Europea) para que quien tenga el código de la regata la siga, y se borran a los 30 días (punto 2).</div>
+    </div>
+
+    <section>
+      <h3>1. Quién es el responsable</h3>
+      <p>Esta aplicación, <strong>Ojo Marinero Salida</strong>, está desarrollada y publicada por <strong>José Cuervo</strong>, desarrollador independiente.</p>
+      <p>Para cualquier cuestión relacionada con esta política puedes escribir a: <a href="mailto:jose.cuervo.acebal@gmail.com">jose.cuervo.acebal@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h3>2. Qué datos se recogen</h3>
+      <p><strong>Ninguno</strong>, salvo con «En directo», que está apagado si no lo activas tú (abajo). La aplicación no solicita registro y no crea cuentas de usuario.</p>
+      <p>Lo que configuras —la línea de salida (comité y baliza), el viento, la estación meteorológica, la distancia de la tablet a la proa, el idioma, la voz, y el nombre del barco y el código de regata de «En directo»— se guarda exclusivamente en el almacenamiento local de tu dispositivo, igual que la marca de que has comprado la versión completa. Ni el desarrollador ni nadie más tiene acceso a ello.</p>
+      <p><strong>Recorrido de la regata (track).</strong> Mientras el cronómetro de salida está en marcha, la aplicación guarda en tu dispositivo tu posición, la hora, la velocidad y el rumbo cada dos segundos, hasta un máximo de 4 horas. No sale del dispositivo salvo que tú lo compartas con el botón «Descargar GPX».</p>
+      <p><strong>Cuaderno de regata.</strong> Durante ese mismo tiempo la aplicación guarda también en tu dispositivo la línea y el viento que usas (y cada cambio, con su hora), lo que marcaba cada 2 minutos (tu posición y tu distancia a la línea) y el tiempo de la estación elegida cada 2 minutos. Sirve para analizar la regata después. No sale del dispositivo salvo que tú lo compartas con el botón «Descargar cuaderno».</p>
+      <p><strong>En directo (opcional).</strong> Si lo activas en la sección «En directo», mientras esté activado la aplicación envía a un servidor: tu posición cada 5 segundos, con su hora, velocidad y rumbo; tu cuaderno de regata (lo descrito arriba); el nombre del barco que escribas y la versión de la aplicación; y la línea de salida (comité y baliza). Para poder escribir, Firebase da a tu teléfono un identificador anónimo, sin nombre, correo ni teléfono. Lo puede ver cualquiera que tenga el <strong>código de la regata</strong>: tú decides a quién se lo das. Se guarda en Google Firebase Realtime Database, en un centro de datos de la Unión Europea (Bélgica); Google actúa como encargado del tratamiento. La base legal es tu consentimiento, que das al activarlo y retiras al apagarlo. <strong>Se borra a los 30 días</strong>: lo hace la propia aplicación de cualquiera de los barcos de esa regata al abrirse con conexión, y el desarrollador borra lo que pueda quedar. Puedes borrar lo tuyo antes con «Borrar mis datos de esta regata del servidor» o escribiendo a la dirección del punto 1. No se usa para nada más: ni publicidad, ni análisis, ni se cede a nadie.</p>
+      <p>Puedes borrar lo guardado en tu dispositivo en cualquier momento: el recorrido y el cuaderno, con «Borrar la regata grabada»; cada extremo de la línea, con su botón; y todo, desinstalando la aplicación.</p>
+    </section>
+
+    <section>
+      <h3>3. Permisos que solicita la aplicación</h3>
+      <table>
+        <tr><th>Permiso</th><th>Para qué se usa</th></tr>
+        <tr><td><strong>Ubicación</strong></td><td>Es el permiso principal: con tu posición se marcan los extremos de la línea, se calcula tu distancia a la línea y tu velocidad, y se graba el recorrido mientras corre el cronómetro. Se usa <strong>en el propio dispositivo</strong>; solo sale de él si activas «En directo». Solo se usa con la aplicación abierta, nunca en segundo plano. Puedes denegarlo: la cuenta atrás y el viento siguen funcionando.</td></tr>
+        <tr><td><strong>Internet</strong></td><td>Para traer los datos de una estación meteorológica, para comprobar con Google Play si has comprado la versión completa y, solo si lo activas, para «En directo». Todos los cálculos funcionan sin conexión.</td></tr>
+        <tr><td><strong>Vibración</strong></td><td>Para avisar en la cuenta atrás. No implica ningún dato.</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>4. Conexiones a internet y origen de los datos</h3>
+      <p>La aplicación se conecta únicamente a estos servicios, y solo en los casos indicados:</p>
+      <table>
+        <tr><th>Servicio</th><th>Cuándo</th><th>Qué se envía</th></tr>
+        <tr>
+          <td><strong>Puertos del Estado</strong><br><span style="font-size:13px">portus.puertos.es</span></td>
+          <td>Al pulsar «Traer datos» y cada 2 minutos mientras el cronómetro está en marcha, para el cuaderno de regata</td>
+          <td>El identificador público de la estación elegida. No se envía tu posición ni ningún dato tuyo.</td>
+        </tr>
+        <tr>
+          <td><strong>Open-Meteo</strong><br><span style="font-size:13px">open-meteo.com</span></td>
+          <td>En esos mismos casos, solo si la estación no responde o le falta algún parámetro</td>
+          <td>Las coordenadas <em>de la estación consultada</em>, no las tuyas.</td>
+        </tr>
+        <tr>
+          <td><strong>Google Play</strong><br><span style="font-size:13px">play.google.com</span></td>
+          <td>Al abrir la aplicación, al comprar y al pulsar «Restaurar compra»</td>
+          <td>La consulta de si tu cuenta de Google Play tiene comprada la versión completa. La gestiona el propio sistema de Google Play.</td>
+        </tr>
+        <tr>
+          <td><strong>Google Firebase</strong><br><span style="font-size:13px">identitytoolkit.googleapis.com · securetoken.googleapis.com · firebasedatabase.app</span></td>
+          <td>Solo con «En directo» activado</td>
+          <td>Lo descrito en el punto 2: posición, cuaderno, nombre del barco, línea de salida y el identificador anónimo.</td>
+        </tr>
+      </table>
+      <p>Estos servicios son ajenos al desarrollador y se rigen por sus propias políticas de privacidad. Como en cualquier petición a internet, pueden registrar la dirección IP de la conexión.</p>
+      <p>Quien sigue la regata lo hace en una página web que se abre en su navegador y que usa además los mapas de OpenStreetMap y OpenSeaMap y la biblioteca Leaflet (unpkg.com o cdn.jsdelivr.net).</p>
+      <h4>Origen y crédito de los datos</h4>
+      <p>Los datos de oleaje, viento y nivel del mar proceden de <strong>Puertos del Estado</strong> (redes REDEXT, REDCOS y REDMAR). La predicción de respaldo procede de Open-Meteo.</p>
+    </section>
+
+    <section>
+      <h3>5. Compras dentro de la aplicación</h3>
+      <p>La aplicación ofrece una <strong>compra única</strong> que desbloquea el extremo favorecido y el tiempo a la línea. Es opcional: la parte gratuita funciona sin comprar nada.</p>
+      <p>La transacción la gestiona íntegramente <strong>Google Play</strong>: el desarrollador no recibe ni almacena dato de pago alguno. La aplicación solo consulta a Google Play si la compra existe (al abrirse, al comprar y al restaurar) y guarda en tu dispositivo una marca para funcionar sin cobertura. El tratamiento que Google hace de esos datos se rige por su propia política: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+    </section>
+
+    <section>
+      <h3>6. Publicidad y análisis</h3>
+      <p>La aplicación <strong>no contiene publicidad</strong> y no utiliza herramientas de análisis ni de seguimiento de ningún tipo. No hay identificadores publicitarios, ni estadísticas de uso, ni perfiles de comportamiento.</p>
+    </section>
+
+    <section>
+      <h3>7. Menores</h3>
+      <p>La aplicación es una herramienta náutica dirigida a regatistas y navegantes responsables de una embarcación. No está dirigida a menores ni recoge datos que permitan identificarlos.</p>
+    </section>
+
+    <section>
+      <h3>8. Tus derechos</h3>
+      <p>La normativa de protección de datos (RGPD) reconoce derechos de acceso, rectificación, supresión y portabilidad.</p>
+      <ul>
+        <li><strong>En tu dispositivo:</strong> todo está visible y editable en la propia aplicación, y puedes borrarlo tú (punto 2).</li>
+        <li><strong>En el servidor de «En directo»:</strong> lo borras con «Borrar mis datos de esta regata del servidor»; también puedes escribir a jose.cuervo.acebal@gmail.com indicando el código de la regata y el nombre del barco. En cualquier caso se borra a los 30 días.</li>
+      </ul>
+      <p>Si consideras que no se han atendido tus derechos, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
+    </section>
+
+    <section>
+      <h3>9. Aviso importante sobre el uso</h3>
+      <p><strong>Ojo Marinero Salida es una ayuda para la salida de regata.</strong> No es un sistema de navegación certificado y no sustituye a los instrumentos de a bordo, a las Reglas de Regata de la Vela, al Reglamento Internacional para Prevenir Abordajes (RIPA) ni al buen juicio marinero. Los cálculos y los datos de terceros son orientativos. La responsabilidad de la navegación y de la seguridad a bordo es siempre del patrón.</p>
+      <p><strong>Regla 41 del RRV:</strong> en regata, un barco no puede recibir ayuda externa —tampoco consejos tácticos desde tierra— salvo que las instrucciones de regata lo permitan. Seguir la regata en directo siempre está permitido.</p>
+    </section>
+
+    <section>
+      <h3>10. Cambios en esta política</h3>
+      <p>Si en el futuro esta política cambia, se publicará aquí una versión actualizada con su fecha. Si algún cambio implicase recoger datos personales que hoy no se recogen, se solicitaría tu consentimiento expreso antes de hacerlo.</p>
+    </section>
+
+  </div>
+
+  <!-- ================= ENGLISH ================= -->
+  <div class="lang-block" id="en">
+
+    <div class="destacado">
+      <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
+      <div><strong>In short:</strong> Ojo Marinero Salida collects no personal data and only transmits what you choose to share.
+        Your GPS position is used on the device. The line, the wind and, while the timer runs, your race track and race log are stored only on your own device.
+        There are no user accounts, no advertising and no tracking of any kind. The only exception is <strong>«Live»</strong>, optional and off unless you turn it on:
+        then your position and race log are sent to a server (Google Firebase, in the European Union) so that anyone with the race code can follow it, and they are deleted after 30 days (section 2).</div>
+    </div>
+
+    <section>
+      <h3>1. Who is responsible</h3>
+      <p>This app, <strong>Ojo Marinero Salida</strong>, is developed and published by <strong>José Cuervo</strong>, independent developer.</p>
+      <p>For any question about this policy, write to: <a href="mailto:jose.cuervo.acebal@gmail.com">jose.cuervo.acebal@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h3>2. What data is collected</h3>
+      <p><strong>None</strong>, except with «Live», which is off unless you turn it on (below). The app requires no sign-up and creates no user accounts.</p>
+      <p>What you set up —the start line (committee boat and pin), the wind, the weather station, the tablet-to-bow distance, the language, the voice, and the boat name and race code for «Live»— is stored only in your device's local storage, as is the flag showing you bought the full version. Neither the developer nor anyone else can access it.</p>
+      <p><strong>Race track.</strong> While the start timer runs, the app stores on your device your position, time, speed and heading every two seconds, for up to 4 hours. It does not leave the device unless you share it with «Download GPX».</p>
+      <p><strong>Race log.</strong> During the same time the app also stores on your device the line and wind you use (and each change, with its time), what it showed every 2 minutes (your position and distance to the line) and the weather from the chosen station every 2 minutes. It is for analysing the race afterwards. It does not leave the device unless you share it with «Download race log».</p>
+      <p><strong>Live (optional).</strong> If you turn it on in the «Live» section, while it is on the app sends to a server: your position every 5 seconds, with its time, speed and heading; your race log (described above); the boat name you enter and the app version; and the start line (committee boat and pin). To be able to write, Firebase gives your phone an anonymous identifier, with no name, email or phone number. Anyone with the <strong>race code</strong> can see it: you decide who gets it. It is stored in Google Firebase Realtime Database, in a European Union data centre (Belgium); Google acts as data processor. The legal basis is your consent, given by turning it on and withdrawn by turning it off. <strong>It is deleted after 30 days</strong>: the app of any boat in that race does it when opened with a connection, and the developer deletes anything left. You can delete yours earlier with «Delete my data for this race from the server» or by writing to the address in section 1. It is used for nothing else: no advertising, no analytics, never handed to anyone.</p>
+      <p>You can delete what is stored on your device at any time: the track and the race log with «Delete the recorded race»; each end of the line with its button; and everything by uninstalling the app.</p>
+    </section>
+
+    <section>
+      <h3>3. Permissions the app requests</h3>
+      <table>
+        <tr><th>Permission</th><th>What it is used for</th></tr>
+        <tr><td><strong>Location</strong></td><td>The main permission: your position is used to mark the ends of the line, to calculate your distance to the line and your speed, and to record your track while the timer runs. It is used <strong>on the device itself</strong>; it only leaves it if you turn on «Live». It is only used with the app open, never in the background. You can refuse it: the countdown and the wind still work.</td></tr>
+        <tr><td><strong>Internet</strong></td><td>To get data from a weather station, to check with Google Play whether you bought the full version and, only if you turn it on, for «Live». All calculations work offline.</td></tr>
+        <tr><td><strong>Vibration</strong></td><td>For countdown alerts. It involves no data.</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>4. Internet connections and data sources</h3>
+      <p>The app connects only to these services, and only in the cases shown:</p>
+      <table>
+        <tr><th>Service</th><th>When</th><th>What is sent</th></tr>
+        <tr>
+          <td><strong>Puertos del Estado</strong><br><span style="font-size:13px">portus.puertos.es</span></td>
+          <td>When you tap «Get data» and every 2 minutes while the timer runs, for the race log</td>
+          <td>The public ID of the chosen station. Neither your position nor any data of yours is sent.</td>
+        </tr>
+        <tr>
+          <td><strong>Open-Meteo</strong><br><span style="font-size:13px">open-meteo.com</span></td>
+          <td>In the same cases, only if the station does not answer or lacks a value</td>
+          <td>The coordinates <em>of the station</em>, not yours.</td>
+        </tr>
+        <tr>
+          <td><strong>Google Play</strong><br><span style="font-size:13px">play.google.com</span></td>
+          <td>When opening the app, when buying and when tapping «Restore purchase»</td>
+          <td>Whether your Google Play account owns the full version. Handled by Google Play itself.</td>
+        </tr>
+        <tr>
+          <td><strong>Google Firebase</strong><br><span style="font-size:13px">identitytoolkit.googleapis.com · securetoken.googleapis.com · firebasedatabase.app</span></td>
+          <td>Only with «Live» turned on</td>
+          <td>What is described in section 2: position, race log, boat name, start line and the anonymous identifier.</td>
+        </tr>
+      </table>
+      <p>These services are independent of the developer and governed by their own privacy policies. As with any internet request, they may log the connection's IP address.</p>
+      <p>People following the race do so on a web page opened in their own browser, which also uses OpenStreetMap and OpenSeaMap maps and the Leaflet library (unpkg.com or cdn.jsdelivr.net).</p>
+      <h4>Data sources and credits</h4>
+      <p>Wave, wind and sea-level data come from <strong>Puertos del Estado</strong> (REDEXT, REDCOS and REDMAR networks). The fallback forecast comes from Open-Meteo.</p>
+    </section>
+
+    <section>
+      <h3>5. In-app purchases</h3>
+      <p>The app offers a <strong>one-off purchase</strong> that unlocks the favoured end and the time to the line. It is optional: the free part works without buying anything.</p>
+      <p>The transaction is handled entirely by <strong>Google Play</strong>: the developer receives and stores no payment data. The app only asks Google Play whether the purchase exists (on opening, when buying and when restoring) and stores a flag on your device to work without signal. Google's handling of that data is governed by its own policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+    </section>
+
+    <section>
+      <h3>6. Advertising and analytics</h3>
+      <p>The app <strong>contains no advertising</strong> and uses no analytics or tracking tools of any kind. There are no advertising IDs, no usage statistics and no behavioural profiles.</p>
+    </section>
+
+    <section>
+      <h3>7. Children</h3>
+      <p>The app is a nautical tool for racing sailors and skippers responsible for a boat. It is not aimed at children and collects no data that could identify them.</p>
+    </section>
+
+    <section>
+      <h3>8. Your rights</h3>
+      <p>Data protection law (GDPR) gives you rights of access, rectification, erasure and portability.</p>
+      <ul>
+        <li><strong>On your device:</strong> everything is visible and editable in the app itself, and you can delete it yourself (section 2).</li>
+        <li><strong>On the «Live» server:</strong> delete it with «Delete my data for this race from the server», or write to jose.cuervo.acebal@gmail.com giving the race code and the boat name. In any case it is deleted after 30 days.</li>
+      </ul>
+      <p>If you feel your rights have not been respected, you can complain to the Spanish Data Protection Agency (aepd.es).</p>
+    </section>
+
+    <section>
+      <h3>9. Important notice about use</h3>
+      <p><strong>Ojo Marinero Salida is an aid for race starts.</strong> It is not a certified navigation system and does not replace on-board instruments, the Racing Rules of Sailing, the International Regulations for Preventing Collisions at Sea (COLREGs) or good seamanship. Calculations and third-party data are for guidance only. Responsibility for navigation and safety on board always lies with the skipper.</p>
+      <p><strong>RRS rule 41:</strong> while racing, a boat may not receive outside help —including tactical advice from shore— unless the sailing instructions allow it. Following the race live is always allowed.</p>
+    </section>
+
+    <section>
+      <h3>10. Changes to this policy</h3>
+      <p>If this policy changes, an updated version with its date will be published here. If any change involved collecting personal data not collected today, your express consent would be requested first.</p>
+    </section>
+
+  </div>
+
+  <!-- ================= FRANÇAIS ================= -->
+  <div class="lang-block" id="fr">
+
+    <div class="destacado">
+      <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
+      <div><strong>En bref :</strong> Ojo Marinero Salida ne collecte aucune donnée personnelle et ne transmet que ce que vous décidez de partager.
+        Votre position GPS est utilisée sur l'appareil. La ligne, le vent et, pendant que le chronomètre tourne, la trace et le journal de votre régate sont conservés uniquement sur votre appareil.
+        Il n'y a ni comptes utilisateur, ni publicité, ni suivi d'aucune sorte. La seule exception est <strong>« En direct »</strong>, facultatif et désactivé tant que vous ne l'activez pas :
+        votre position et votre journal sont alors envoyés à un serveur (Google Firebase, dans l'Union européenne) pour que toute personne ayant le code de la régate puisse la suivre, et sont effacés au bout de 30 jours (point 2).</div>
+    </div>
+
+    <section>
+      <h3>1. Responsable</h3>
+      <p>Cette application, <strong>Ojo Marinero Salida</strong>, est développée et publiée par <strong>José Cuervo</strong>, développeur indépendant.</p>
+      <p>Pour toute question sur cette politique, écrivez à : <a href="mailto:jose.cuervo.acebal@gmail.com">jose.cuervo.acebal@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h3>2. Données collectées</h3>
+      <p><strong>Aucune</strong>, sauf avec « En direct », désactivé tant que vous ne l'activez pas (ci-dessous). L'application ne demande aucune inscription et ne crée aucun compte.</p>
+      <p>Ce que vous réglez —la ligne de départ (comité et bouée), le vent, la station météo, la distance de la tablette à l'étrave, la langue, la voix, ainsi que le nom du bateau et le code de régate pour « En direct »— est conservé uniquement dans le stockage local de votre appareil, comme l'indication de l'achat de la version complète. Ni le développeur ni personne d'autre n'y a accès.</p>
+      <p><strong>Trace de la régate.</strong> Pendant que le chronomètre de départ tourne, l'application enregistre sur votre appareil votre position, l'heure, la vitesse et le cap toutes les deux secondes, pendant 4 heures au maximum. Elle ne quitte l'appareil que si vous la partagez avec « Télécharger le GPX ».</p>
+      <p><strong>Journal de régate.</strong> Pendant ce même temps, l'application enregistre aussi sur votre appareil la ligne et le vent utilisés (et chaque changement, avec son heure), ce qu'elle affichait toutes les 2 minutes (votre position et votre distance à la ligne) et la météo de la station choisie toutes les 2 minutes. Il sert à analyser la régate ensuite. Il ne quitte l'appareil que si vous le partagez avec « Télécharger le journal ».</p>
+      <p><strong>En direct (facultatif).</strong> Si vous l'activez dans la section « En direct », tant qu'il est actif l'application envoie à un serveur : votre position toutes les 5 secondes, avec l'heure, la vitesse et le cap ; votre journal de régate (décrit ci-dessus) ; le nom du bateau que vous saisissez et la version de l'application ; et la ligne de départ (comité et bouée). Pour pouvoir écrire, Firebase attribue à votre téléphone un identifiant anonyme, sans nom, courriel ni numéro. Toute personne ayant le <strong>code de la régate</strong> peut le voir : c'est vous qui décidez à qui le donner. Les données sont conservées dans Google Firebase Realtime Database, dans un centre de données de l'Union européenne (Belgique) ; Google agit comme sous-traitant. La base légale est votre consentement, donné en l'activant et retiré en le désactivant. <strong>Elles sont effacées au bout de 30 jours</strong> : l'application de n'importe quel bateau de cette régate le fait en s'ouvrant avec une connexion, et le développeur efface ce qui pourrait rester. Vous pouvez effacer les vôtres avant avec « Effacer mes données de cette régate du serveur » ou en écrivant à l'adresse du point 1. Elles ne servent à rien d'autre : ni publicité, ni analyse, ni cession à quiconque.</p>
+      <p>Vous pouvez effacer à tout moment ce qui est conservé sur votre appareil : la trace et le journal avec « Effacer la régate enregistrée » ; chaque extrémité de la ligne avec son bouton ; et tout, en désinstallant l'application.</p>
+    </section>
+
+    <section>
+      <h3>3. Autorisations demandées</h3>
+      <table>
+        <tr><th>Autorisation</th><th>Utilisation</th></tr>
+        <tr><td><strong>Localisation</strong></td><td>L'autorisation principale : votre position sert à marquer les extrémités de la ligne, à calculer votre distance à la ligne et votre vitesse, et à enregistrer la trace pendant que le chronomètre tourne. Elle est utilisée <strong>sur l'appareil lui-même</strong> ; elle n'en sort que si vous activez « En direct ». Elle n'est utilisée qu'avec l'application ouverte, jamais en arrière-plan. Vous pouvez la refuser : le compte à rebours et le vent fonctionnent toujours.</td></tr>
+        <tr><td><strong>Internet</strong></td><td>Pour obtenir les données d'une station météo, pour vérifier auprès de Google Play si vous avez acheté la version complète et, seulement si vous l'activez, pour « En direct ». Tous les calculs fonctionnent hors ligne.</td></tr>
+        <tr><td><strong>Vibration</strong></td><td>Pour les alertes du compte à rebours. Aucune donnée n'est concernée.</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>4. Connexions à internet et origine des données</h3>
+      <p>L'application se connecte uniquement à ces services, et seulement dans les cas indiqués :</p>
+      <table>
+        <tr><th>Service</th><th>Quand</th><th>Ce qui est envoyé</th></tr>
+        <tr>
+          <td><strong>Puertos del Estado</strong><br><span style="font-size:13px">portus.puertos.es</span></td>
+          <td>Quand vous touchez « Obtenir les données » et toutes les 2 minutes pendant que le chronomètre tourne, pour le journal</td>
+          <td>L'identifiant public de la station choisie. Ni votre position ni aucune donnée vous concernant ne sont envoyées.</td>
+        </tr>
+        <tr>
+          <td><strong>Open-Meteo</strong><br><span style="font-size:13px">open-meteo.com</span></td>
+          <td>Dans les mêmes cas, seulement si la station ne répond pas ou qu'il manque une valeur</td>
+          <td>Les coordonnées <em>de la station</em>, pas les vôtres.</td>
+        </tr>
+        <tr>
+          <td><strong>Google Play</strong><br><span style="font-size:13px">play.google.com</span></td>
+          <td>À l'ouverture, à l'achat et en touchant « Restaurer l'achat »</td>
+          <td>Si votre compte Google Play possède la version complète. Géré par Google Play lui-même.</td>
+        </tr>
+        <tr>
+          <td><strong>Google Firebase</strong><br><span style="font-size:13px">identitytoolkit.googleapis.com · securetoken.googleapis.com · firebasedatabase.app</span></td>
+          <td>Seulement avec « En direct » activé</td>
+          <td>Ce qui est décrit au point 2 : position, journal, nom du bateau, ligne de départ et l'identifiant anonyme.</td>
+        </tr>
+      </table>
+      <p>Ces services sont indépendants du développeur et régis par leurs propres politiques de confidentialité. Comme pour toute requête sur internet, ils peuvent enregistrer l'adresse IP de la connexion.</p>
+      <p>Les personnes qui suivent la régate le font sur une page web ouverte dans leur propre navigateur, qui utilise aussi les cartes OpenStreetMap et OpenSeaMap et la bibliothèque Leaflet (unpkg.com ou cdn.jsdelivr.net).</p>
+      <h4>Origine et crédits des données</h4>
+      <p>Les données de houle, de vent et de niveau de la mer proviennent de <strong>Puertos del Estado</strong> (réseaux REDEXT, REDCOS et REDMAR). La prévision de secours provient d'Open-Meteo.</p>
+    </section>
+
+    <section>
+      <h3>5. Achats intégrés</h3>
+      <p>L'application propose un <strong>achat unique</strong> qui débloque l'extrémité favorisée et le temps jusqu'à la ligne. Il est facultatif : la partie gratuite fonctionne sans rien acheter.</p>
+      <p>La transaction est entièrement gérée par <strong>Google Play</strong> : le développeur ne reçoit ni ne conserve aucune donnée de paiement. L'application demande seulement à Google Play si l'achat existe (à l'ouverture, à l'achat et à la restauration) et garde sur votre appareil une indication pour fonctionner sans réseau. Le traitement de ces données par Google relève de sa propre politique : <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+    </section>
+
+    <section>
+      <h3>6. Publicité et analyse</h3>
+      <p>L'application <strong>ne contient aucune publicité</strong> et n'utilise aucun outil d'analyse ou de suivi. Il n'y a ni identifiants publicitaires, ni statistiques d'utilisation, ni profils de comportement.</p>
+    </section>
+
+    <section>
+      <h3>7. Mineurs</h3>
+      <p>L'application est un outil nautique destiné aux régatiers et chefs de bord responsables d'un bateau. Elle ne s'adresse pas aux mineurs et ne collecte aucune donnée permettant de les identifier.</p>
+    </section>
+
+    <section>
+      <h3>8. Vos droits</h3>
+      <p>La réglementation sur la protection des données (RGPD) vous reconnaît des droits d'accès, de rectification, d'effacement et de portabilité.</p>
+      <ul>
+        <li><strong>Sur votre appareil :</strong> tout est visible et modifiable dans l'application, et vous pouvez l'effacer vous-même (point 2).</li>
+        <li><strong>Sur le serveur « En direct » :</strong> effacez vos données avec « Effacer mes données de cette régate du serveur », ou écrivez à jose.cuervo.acebal@gmail.com en indiquant le code de la régate et le nom du bateau. Dans tous les cas, elles sont effacées au bout de 30 jours.</li>
+      </ul>
+      <p>Si vous estimez que vos droits n'ont pas été respectés, vous pouvez saisir l'Agence espagnole de protection des données (aepd.es).</p>
+    </section>
+
+    <section>
+      <h3>9. Avertissement important</h3>
+      <p><strong>Ojo Marinero Salida est une aide au départ de régate.</strong> Ce n'est pas un système de navigation certifié et il ne remplace ni les instruments de bord, ni les Règles de course à la voile, ni le Règlement international pour prévenir les abordages en mer (RIPAM), ni le bon sens marin. Les calculs et les données de tiers sont indicatifs. La responsabilité de la navigation et de la sécurité à bord incombe toujours au chef de bord.</p>
+      <p><strong>Règle 41 des RCV :</strong> en course, un bateau ne peut pas recevoir d'aide extérieure —y compris des conseils tactiques depuis la terre— sauf si les instructions de course le permettent. Suivre la régate en direct est toujours permis.</p>
+    </section>
+
+    <section>
+      <h3>10. Modifications de cette politique</h3>
+      <p>Si cette politique change, une version mise à jour sera publiée ici avec sa date. Si une modification impliquait de collecter des données personnelles qui ne le sont pas aujourd'hui, votre consentement exprès serait demandé au préalable.</p>
+    </section>
+
+  </div>
+
+  <!-- ================= PORTUGUÊS ================= -->
+  <div class="lang-block" id="pt">
+
+    <div class="destacado">
+      <svg width="22" height="22" style="color:var(--ok);flex-shrink:0;margin-top:2px"><use href="#shield"/></svg>
+      <div><strong>Em resumo:</strong> o Ojo Marinero Salida não recolhe dados pessoais e só transmite o que decides partilhar.
+        A tua posição GPS é usada no dispositivo. A linha, o vento e, enquanto o cronómetro corre, o percurso e o diário da tua regata ficam guardados apenas no teu dispositivo.
+        Não há contas de utilizador, nem publicidade, nem seguimento de qualquer tipo. A única exceção é <strong>«Em direto»</strong>, opcional e desligado se não o ativares:
+        nesse caso, a tua posição e o teu diário de regata são enviados para um servidor (Google Firebase, na União Europeia) para que quem tiver o código da regata a possa seguir, e são apagados ao fim de 30 dias (ponto 2).</div>
+    </div>
+
+    <section>
+      <h3>1. Quem é o responsável</h3>
+      <p>Esta aplicação, <strong>Ojo Marinero Salida</strong>, é desenvolvida e publicada por <strong>José Cuervo</strong>, programador independente.</p>
+      <p>Para qualquer questão sobre esta política podes escrever para: <a href="mailto:jose.cuervo.acebal@gmail.com">jose.cuervo.acebal@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h3>2. Que dados são recolhidos</h3>
+      <p><strong>Nenhum</strong>, exceto com «Em direto», que está desligado se não o ativares (abaixo). A aplicação não pede registo nem cria contas de utilizador.</p>
+      <p>O que configuras —a linha de partida (comissão e bóia), o vento, a estação meteorológica, a distância do tablet à proa, o idioma, a voz, e o nome do barco e o código de regata de «Em direto»— é guardado exclusivamente no armazenamento local do teu dispositivo, tal como a indicação de que compraste a versão completa. Nem o programador nem mais ninguém tem acesso a isso.</p>
+      <p><strong>Percurso da regata (track).</strong> Enquanto o cronómetro de partida está em marcha, a aplicação guarda no teu dispositivo a tua posição, a hora, a velocidade e o rumo a cada dois segundos, até um máximo de 4 horas. Não sai do dispositivo a não ser que o partilhes com «Descarregar GPX».</p>
+      <p><strong>Diário de regata.</strong> Durante esse mesmo tempo a aplicação guarda também no teu dispositivo a linha e o vento que usas (e cada alteração, com a sua hora), o que mostrava a cada 2 minutos (a tua posição e a distância à linha) e o tempo da estação escolhida a cada 2 minutos. Serve para analisar a regata depois. Não sai do dispositivo a não ser que o partilhes com «Descarregar diário».</p>
+      <p><strong>Em direto (opcional).</strong> Se o ativares na secção «Em direto», enquanto estiver ativo a aplicação envia para um servidor: a tua posição a cada 5 segundos, com hora, velocidade e rumo; o teu diário de regata (descrito acima); o nome do barco que escreveres e a versão da aplicação; e a linha de partida (comissão e bóia). Para poder escrever, o Firebase dá ao teu telefone um identificador anónimo, sem nome, e-mail nem número. Pode vê-lo qualquer pessoa que tenha o <strong>código da regata</strong>: és tu que decides a quem o dás. É guardado no Google Firebase Realtime Database, num centro de dados da União Europeia (Bélgica); a Google atua como subcontratante. A base legal é o teu consentimento, que dás ao ativá-lo e retiras ao desligá-lo. <strong>É apagado ao fim de 30 dias</strong>: fá-lo a aplicação de qualquer barco dessa regata ao abrir-se com ligação, e o programador apaga o que possa restar. Podes apagar o teu antes com «Apagar os meus dados desta regata do servidor» ou escrevendo para o endereço do ponto 1. Não é usado para mais nada: nem publicidade, nem análise, nem é cedido a ninguém.</p>
+      <p>Podes apagar o que está guardado no teu dispositivo em qualquer momento: o percurso e o diário, com «Apagar a regata gravada»; cada extremo da linha, com o seu botão; e tudo, desinstalando a aplicação.</p>
+    </section>
+
+    <section>
+      <h3>3. Permissões que a aplicação pede</h3>
+      <table>
+        <tr><th>Permissão</th><th>Para que é usada</th></tr>
+        <tr><td><strong>Localização</strong></td><td>É a permissão principal: com a tua posição marcam-se os extremos da linha, calcula-se a distância à linha e a velocidade, e grava-se o percurso enquanto o cronómetro corre. É usada <strong>no próprio dispositivo</strong>; só sai dele se ativares «Em direto». Só é usada com a aplicação aberta, nunca em segundo plano. Podes recusá-la: a contagem decrescente e o vento continuam a funcionar.</td></tr>
+        <tr><td><strong>Internet</strong></td><td>Para obter os dados de uma estação meteorológica, para confirmar com o Google Play se compraste a versão completa e, só se o ativares, para «Em direto». Todos os cálculos funcionam sem ligação.</td></tr>
+        <tr><td><strong>Vibração</strong></td><td>Para os avisos da contagem decrescente. Não envolve nenhum dado.</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>4. Ligações à internet e origem dos dados</h3>
+      <p>A aplicação liga-se apenas a estes serviços, e só nos casos indicados:</p>
+      <table>
+        <tr><th>Serviço</th><th>Quando</th><th>O que é enviado</th></tr>
+        <tr>
+          <td><strong>Puertos del Estado</strong><br><span style="font-size:13px">portus.puertos.es</span></td>
+          <td>Ao tocar em «Obter dados» e a cada 2 minutos enquanto o cronómetro está em marcha, para o diário de regata</td>
+          <td>O identificador público da estação escolhida. Não é enviada a tua posição nem nenhum dado teu.</td>
+        </tr>
+        <tr>
+          <td><strong>Open-Meteo</strong><br><span style="font-size:13px">open-meteo.com</span></td>
+          <td>Nesses mesmos casos, só se a estação não responder ou lhe faltar algum parâmetro</td>
+          <td>As coordenadas <em>da estação consultada</em>, não as tuas.</td>
+        </tr>
+        <tr>
+          <td><strong>Google Play</strong><br><span style="font-size:13px">play.google.com</span></td>
+          <td>Ao abrir a aplicação, ao comprar e ao tocar em «Restaurar compra»</td>
+          <td>A consulta sobre se a tua conta do Google Play tem a versão completa. É gerida pelo próprio Google Play.</td>
+        </tr>
+        <tr>
+          <td><strong>Google Firebase</strong><br><span style="font-size:13px">identitytoolkit.googleapis.com · securetoken.googleapis.com · firebasedatabase.app</span></td>
+          <td>Só com «Em direto» ativado</td>
+          <td>O descrito no ponto 2: posição, diário, nome do barco, linha de partida e o identificador anónimo.</td>
+        </tr>
+      </table>
+      <p>Estes serviços são alheios ao programador e regem-se pelas suas próprias políticas de privacidade. Como em qualquer pedido à internet, podem registar o endereço IP da ligação.</p>
+      <p>Quem segue a regata fá-lo numa página web aberta no seu navegador, que usa também os mapas do OpenStreetMap e do OpenSeaMap e a biblioteca Leaflet (unpkg.com ou cdn.jsdelivr.net).</p>
+      <h4>Origem e crédito dos dados</h4>
+      <p>Os dados de ondulação, vento e nível do mar provêm de <strong>Puertos del Estado</strong> (redes REDEXT, REDCOS e REDMAR). A previsão de reserva provém do Open-Meteo.</p>
+    </section>
+
+    <section>
+      <h3>5. Compras na aplicação</h3>
+      <p>A aplicação oferece uma <strong>compra única</strong> que desbloqueia o extremo favorecido e o tempo até à linha. É opcional: a parte gratuita funciona sem comprar nada.</p>
+      <p>A transação é gerida integralmente pelo <strong>Google Play</strong>: o programador não recebe nem guarda qualquer dado de pagamento. A aplicação apenas pergunta ao Google Play se a compra existe (ao abrir, ao comprar e ao restaurar) e guarda no dispositivo uma indicação para funcionar sem rede. O tratamento que a Google faz desses dados rege-se pela sua própria política: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+    </section>
+
+    <section>
+      <h3>6. Publicidade e análise</h3>
+      <p>A aplicação <strong>não contém publicidade</strong> e não usa ferramentas de análise nem de seguimento de qualquer tipo. Não há identificadores publicitários, estatísticas de uso nem perfis de comportamento.</p>
+    </section>
+
+    <section>
+      <h3>7. Menores</h3>
+      <p>A aplicação é uma ferramenta náutica dirigida a velejadores de regata e a responsáveis por uma embarcação. Não se dirige a menores nem recolhe dados que permitam identificá-los.</p>
+    </section>
+
+    <section>
+      <h3>8. Os teus direitos</h3>
+      <p>A legislação de proteção de dados (RGPD) reconhece direitos de acesso, retificação, apagamento e portabilidade.</p>
+      <ul>
+        <li><strong>No teu dispositivo:</strong> tudo está visível e editável na própria aplicação, e podes apagá-lo tu mesmo (ponto 2).</li>
+        <li><strong>No servidor de «Em direto»:</strong> apaga-o com «Apagar os meus dados desta regata do servidor», ou escreve para jose.cuervo.acebal@gmail.com indicando o código da regata e o nome do barco. Em qualquer caso, é apagado ao fim de 30 dias.</li>
+      </ul>
+      <p>Se considerares que os teus direitos não foram respeitados, podes apresentar reclamação à Agência Espanhola de Proteção de Dados (aepd.es).</p>
+    </section>
+
+    <section>
+      <h3>9. Aviso importante sobre o uso</h3>
+      <p><strong>O Ojo Marinero Salida é uma ajuda para a partida de regata.</strong> Não é um sistema de navegação certificado e não substitui os instrumentos de bordo, as Regras de Regata à Vela, o Regulamento Internacional para Evitar Abalroamentos no Mar (RIEAM) nem o bom senso marinheiro. Os cálculos e os dados de terceiros são orientativos. A responsabilidade pela navegação e pela segurança a bordo é sempre do patrão.</p>
+      <p><strong>Regra 41 das RRV:</strong> em regata, um barco não pode receber ajuda externa —incluindo conselhos táticos de terra— salvo se as instruções de regata o permitirem. Seguir a regata em direto é sempre permitido.</p>
+    </section>
+
+    <section>
+      <h3>10. Alterações a esta política</h3>
+      <p>Se esta política mudar, será publicada aqui uma versão atualizada com a sua data. Se alguma alteração implicar recolher dados pessoais que hoje não são recolhidos, será pedido previamente o teu consentimento expresso.</p>
+    </section>
+
+  </div>
+
+</div>
+
+<footer>
+  Ojo Marinero Salida · © 2026 José Cuervo
+</footer>
+
+<script>
+  function setLang(code){
+    document.querySelectorAll('.lang-block').forEach(function(b){
+      b.classList.toggle('on', b.id === code);
+    });
+    document.documentElement.lang = code;
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+  // si el navegador está en uno de los idiomas, se muestra ese
+  (function(){
+    var n = (navigator.language||'es').slice(0,2);
+    if (['es','en','fr','pt'].indexOf(n) >= 0) setLang(n);
+  })();
+</script>
+
+</body>
+</html>
